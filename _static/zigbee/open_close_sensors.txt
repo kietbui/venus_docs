@@ -1,0 +1,9 @@
+.. _zig_open_close_devices:
+
+Open & Close devices
+--------------------
+.. toctree:: open_close/smartsense_open_close.txt
+   :maxdepth: 2
+
+.. toctree:: open_close/smartsense_multi.txt
+   :maxdepth: 2

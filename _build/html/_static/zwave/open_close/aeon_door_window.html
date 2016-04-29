@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Aeon Labs Door/Window Sensor &mdash;  venus_usr_guide documentation</title>
+    
+    <link rel="stylesheet" href="../../default.css" type="text/css" />
+    <link rel="stylesheet" href="../../pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     'venus_usr_guide',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../underscore.js"></script>
+    <script type="text/javascript" src="../../doctools.js"></script>
+    <link rel="top" title=" venus_usr_guide documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../venus_usr_guide.html"> venus_usr_guide documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="aeon-labs-door-window-sensor">
+<h1>Aeon Labs Door/Window Sensor<a class="headerlink" href="#aeon-labs-door-window-sensor" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><img alt="../../../_images/aeon_door_window.jpg" src="../../../_images/aeon_door_window.jpg" />
+</div></blockquote>
+<div class="section" id="how-to-add-to-venus-app">
+<h2>How to add to VENUS app<a class="headerlink" href="#how-to-add-to-venus-app" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>To add device to VENUS, below actions are required:</strong></p>
+<ul>
+<li><p class="first">Press &#8220;Add button&#8221; (button &#8216;+&#8217;) in app</p>
+</li>
+<li><p class="first">Reset device:</p>
+<blockquote>
+<div><p><strong>The first time added</strong>: Remove the plastic pull-tab from the back of device</p>
+<p><strong>Otherwise</strong>, press <strong>z-wave button</strong> in the back of this device</p>
+</div></blockquote>
+</li>
+<li><p class="first">Wait for VENUS scan &amp; detect this device and inform in app</p>
+</li>
+<li><p class="first">Reset device again to complete adding device to VENUS</p>
+</li>
+</ul>
+<img alt="../../../_images/aeon_door_window_b.png" src="../../../_images/aeon_door_window_b.png" />
+</div></blockquote>
+</div>
+<div class="section" id="how-to-add-remove-associated-device-s-to">
+<h2>How to add/remove associated device(s) to<a class="headerlink" href="#how-to-add-remove-associated-device-s-to" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>To add associated device(s) to this sensor, below action is required:</strong></p>
+<ul class="simple">
+<li>Add z-wave notified-devices (which will be associated to this sensor) to VENUS</li>
+<li>Select Associate button and then select notified-device(s) to add</li>
+<li>Wake-up this sensor: 1 time press <strong>z-wave button</strong></li>
+<li>If successful, pop-up notification displays in VENUS app</li>
+</ul>
+<p><strong>To remove associated device(s) from this sensor, below action is required:</strong></p>
+<ul class="simple">
+<li>Select Associate button and then select notified-device(s) to remove</li>
+<li>Wake-up this sensor: 1 time press <strong>z-wave button</strong></li>
+<li>If successful, pop-up notification displays in VENUS app</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="configuration-description">
+<h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>1. Signal trigger device (Trigger to associated devices)</strong></p>
+<ul>
+<li><dl class="first docutils">
+<dt>ON (default): When the door/window OPENNED, the associated devices are triggered as ON.</dt>
+<dd><p class="first last">And when the door/window is CLOSED, the associated devices are triggered as OFF.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>OFF: When the door/window OPENED, the associated devices are triggered as OFF.</dt>
+<dd><p class="first last">And when the door/window is CLOSED, the associated devices are triggered as ON.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>2. Signal trigger controller (Trigger to controller - zwave controller embedded in VENUS firmware)</strong></p>
+<ul>
+<li><dl class="first docutils">
+<dt>0x00 (default): When the door/window is OPENNED, the controller is triggered as OPEN.</dt>
+<dd><p class="first last">And when the door/window is CLOSED, the controller is triggered as CLOSE.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>0xFF <span class="classifier-delimiter">:</span> <span class="classifier">When the door/window is OPENNED, the controller is triggered as CLOSE.</span></dt>
+<dd><p class="first last">And when the door/window is CLOSED, the controller is triggered as OPEN.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>3. Report to (Select target to receive trigger events)</strong></p>
+<ul>
+<li><dl class="first docutils">
+<dt>Device &amp; Controller with Battery Information (default): Associated devices, controller are assigned to receive events from device.</dt>
+<dd><p class="first last">Battery information will be added to package send to controller in-order to inform current device&#8217;s battery level.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Device &amp; Controller: Associated devices, controller are assigned to receive events from device.</p>
+</li>
+<li><p class="first">Device: Only associated devices are assigned to receive events from device.</p>
+</li>
+<li><p class="first">Controller: Only controller is assigned to receive events from device.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Controller with Battery Information: Only controller is assigned to receive events from device.</dt>
+<dd><p class="first last">Battery information will be added to package send to controller in-order to inform current device&#8217;s battery level.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Battery Information: Only battery information is sent to controller.</p>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../venus_usr_guide.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Aeon Labs Door/Window Sensor</a><ul>
+<li><a class="reference internal" href="#how-to-add-to-venus-app">How to add to VENUS app</a></li>
+<li><a class="reference internal" href="#how-to-add-remove-associated-device-s-to">How to add/remove associated device(s) to</a></li>
+<li><a class="reference internal" href="#configuration-description">Configuration description</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/_static/zwave/open_close/aeon_door_window.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../venus_usr_guide.html"> venus_usr_guide documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2016, KietBui.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

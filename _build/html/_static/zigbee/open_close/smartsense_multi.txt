@@ -1,0 +1,19 @@
+SmartSense Multi Sensor
+--------------------------------
+
+	.. image:: ../../images/smartsense_multi_sensor.jpg
+	.. :align: left
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	To add device to VENUS, below actions are required:
+	- Press "Add button" (button '+') in app
+	- Reset device: un-plug battery then plug it back
+	- Wait for VENUS scan & detect this device and inform in app
+	- Reset device again to complete adding device to VENUS
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Reset device after pressing add button (button '+' in app)
+	

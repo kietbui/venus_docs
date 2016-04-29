@@ -1,0 +1,24 @@
+.. _open_close_devices:
+
+Open & Close devices
+--------------------
+.. toctree:: open_close/aeon_door_window.txt
+   :maxdepth: 2
+
+.. toctree:: open_close/aeon_recessed_sensor.txt
+   :maxdepth: 2
+
+.. toctree:: open_close/ecolink_door_window.txt
+   :maxdepth: 2
+
+.. toctree:: open_close/ecolink_tilt_sensor.txt
+   :maxdepth: 2
+
+.. toctree:: open_close/schlage_door_window.txt
+   :maxdepth: 2
+
+.. toctree:: open_close/fibaro_door_window.txt
+   :maxdepth: 2
+
+.. toctree:: open_close/enerwave_door_window.txt
+   :maxdepth: 2

@@ -1,0 +1,19 @@
+LinearLinc Dimmable LED light
+--------------------------------
+
+	.. image:: ../../images/light_bulb/linearlinc_dimmable_ledlight.jpg
+	.. :align: left
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**To add device to VENUS, below actions are required:**
+
+	- Press "Add button" (button '+') in app
+	- Reset device: T.B.D
+	- Wait for VENUS scan & detect this device and inform in app
+	- Reset device again to complete adding device to VENUS
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration for this device.

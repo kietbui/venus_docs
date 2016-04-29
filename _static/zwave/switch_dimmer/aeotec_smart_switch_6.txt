@@ -1,0 +1,22 @@
+AEOTEC smart switch 6
+---------------------------------------
+
+	.. image:: ../../images/switch_dimmer/aeotec_smart_switch_6.jpg
+	.. :align: left
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	To add device to VENUS, below actions are required:
+	
+	- Press "Add button" (button '+') in app
+	- Reset device: Plugin device to power-outlet, press **Action button** one
+	- Wait for VENUS scan & detect this device and add it to VENUS
+	
+	.. image:: ../../images/switch_dimmer/aeotec_smart_switch_6_d.png
+	.. :align: left
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	TBD
+	

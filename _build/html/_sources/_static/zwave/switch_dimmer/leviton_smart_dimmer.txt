@@ -1,0 +1,22 @@
+Leviton Dimmer
+---------------------------------------
+
+	.. image:: ../../images/switch_dimmer/leviton_dimmer.jpg
+	.. :align: left
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	To add device to VENUS, below actions are required:
+	
+	- Press "Add button" (button '+') in app
+	- Reset device: Press **Push pad** and release when Locator light changes to red
+	- Wait for VENUS scan & detect this device and add it to VENUS
+	
+	.. image:: ../../images/switch_dimmer/leviton_dimmer_a.jpg
+	.. :align: left
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	TBD
+	
