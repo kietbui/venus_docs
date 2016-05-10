@@ -1,1 +1,0 @@
-.. _alarm_siren_devices:

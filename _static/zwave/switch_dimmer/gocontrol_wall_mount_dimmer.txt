@@ -23,9 +23,14 @@ How to add associated devices
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	**1. Set Ignore Start Level Bit When Transmitting Dim Commands**
+	
 	**2. Night Light**
+	
 	**3. Proper Single Gang Installation**
+	
 	**4. Proper Dual Gang Installation**
+	
 	**5. Proper Triple Gang Installation**
+	
 	**6. Air Gap Switch**
 	

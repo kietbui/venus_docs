@@ -1,10 +1,7 @@
-Aeotec multi sensor   
--------------------------
+.. _lock_devices:
 
-.. image:: ../images/aeotec_door_window_sensor.jpg
-.. :align: center
-
-
-Configuration  
-~~~~~~~~~~~~~~~
-There is no configuration hehe
+Lock devices
+--------------------
+.. toctree:: lock/schlage_connect_camelot.txt
+	:maxdepth: 2
+	

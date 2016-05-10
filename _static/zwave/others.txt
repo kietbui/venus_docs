@@ -1,10 +1,15 @@
-Aeotec multi sensor   
+.. _other_devices:
+
+Others devices
 -------------------------
+.. toctree:: other/aeotec_range_extender.txt
+	:maxdepth: 2
 
-.. image:: ../images/aeotec_door_window_sensor.jpg
-.. :align: center
+.. toctree:: other/gocontrol_garage_remote_control.txt
+	:maxdepth: 2
 
+.. toctree:: other/evolve_wall_mount_5button_lcd.txt
+	:maxdepth: 2
 
-Configuration  
-~~~~~~~~~~~~~~~
-There is no configuration hehe
+.. toctree:: other/remotec_zxt120_ir_extender.txt
+	:maxdepth: 2

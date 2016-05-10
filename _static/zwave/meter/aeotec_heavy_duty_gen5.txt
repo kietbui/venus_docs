@@ -1,0 +1,22 @@
+LinearLinc Dimmable LED light
+--------------------------------
+
+	.. image:: ../../images/meter/aeotec_heavy_duty_gen5.jpg
+	.. :align: left
+	
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**To add device to VENUS, below actions are required:**
+
+	- Press "Add button" (button '+') in app
+	- Reset device: press Z-Wave button
+	- Wait for VENUS scan & detect this device and inform in app
+	
+	.. image:: ../../images/meter/aeotec_heavy_duty_gen5_i.jpg
+	.. :align: left
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	T.B.D

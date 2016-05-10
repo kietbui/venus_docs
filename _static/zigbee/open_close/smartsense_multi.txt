@@ -1,19 +1,34 @@
 SmartSense Multi Sensor
 --------------------------------
 
-	.. image:: ../../images/smartsense_multi_sensor.jpg
+	.. image:: ../../images/door_window/smartsense_multi_sensor.jpg
 	.. :align: left
+
+Basic information
+~~~~~~~~~~~~~~~~~~~~
+	This is a ZigBee mutli-use device that combines a temperature sensor, an accelerometer (which registers angle, vibration, and movement), and an open/closed contact sensor for doors, windows, cabinets, and more. 
+	
+	These are just a few of many possible uses:
+
+		- Get temperatures readings in any room or indoor zone.
+		- Know whether your garage door is open or closed.
+		- Put the Multi Sensor on a safe or other valuable item (ATV, original artwork, vintage Nintendo Power Glove) and be alerted if it is jostled or moved.
+		
+	The Multi Sensor can be mounted on flat surfaces using the included adhesive tape and is intended for indoor use only. 
 
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
 	To add device to VENUS, below actions are required:
-	- Press "Add button" (button '+') in app
-	- Reset device: un-plug battery then plug it back
-	- Wait for VENUS scan & detect this device and inform in app
-	- Reset device again to complete adding device to VENUS
+		- Press "Add button" (button '+') in app
+		- Reset device: un-plug battery then plug it back
+		- Wait for VENUS scan & detect this device and inform in app
+		- Reset device again to complete adding device to VENUS
+	
+	.. image:: ../../images/door_window/smartsense_multi_sensor_i.png
+	.. :align: left
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	- Reset device after pressing add button (button '+' in app)
+	There is no configuration for this device.
 	

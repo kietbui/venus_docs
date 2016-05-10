@@ -7,13 +7,24 @@ Philips Hue Bloom
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
-	**To add device to VENUS, below actions are required:**
-
-	- Press "Add button" (button '+') in app
-	- Reset device: T.B.D
-	- Wait for VENUS scan & detect this device and inform in app
-	- Reset device again to complete adding device to VENUS
-
+	**Newly add device to Zigbee network**
+		- Press "Add button" (button '+') in app
+		- Plugin device to power-supply socket
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**Reset and reconnect**
+		
+		Phillip HUE bloom does not support manual reset in device. Phillip bridge is required to do the reset.
+		
+		Below are steps with Phillip bridge.
+		- Connect device to Phillip bridge
+		- Press and hold **Factory reset button** in the back for few seconds.
+		- Press "Add button" (button '+') in app
+		- Wait for VENUS scan & detect this device and inform in app
+		
+		.. image:: ../../images/light_bulb/phillip_hue_bridge.png
+		.. :align: left
+	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	There is no configuration for this device.

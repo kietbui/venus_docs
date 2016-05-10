@@ -1,1 +1,19 @@
 .. _alarm_siren_devices:
+
+Alarms & Sirens devices
+--------------------
+.. toctree:: alarm_siren/first_alert_smoke_carbon.txt
+	:maxdepth: 2
+	
+.. toctree:: alarm_siren/aeon_gen5_siren_indoor.txt
+	:maxdepth: 2
+	
+.. toctree:: alarm_siren/fortrezz_ssa2usr_strobe_alarm.txt
+	:maxdepth: 2
+	
+.. toctree:: alarm_siren/fortrezz_outdoor_strobe_alarm.txt
+	:maxdepth: 2
+	
+.. toctree:: alarm_siren/everspring_indoor_siren.txt
+	:maxdepth: 2
+

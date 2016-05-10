@@ -1,10 +1,11 @@
-Aeotec multi sensor   
--------------------------
+.. _amazon_devices:
 
-.. image:: ../images/aeotec_door_window_sensor.jpg
-.. :align: center
+AMAZON devices
+--------------------
+	.. toctree:: amazon/amazon_echo.txt
+	:maxdepth: 2
+	
+	.. toctree:: amazon/echo_voice_remote.txt
+	:maxdepth: 2
 
 
-Configuration  
-~~~~~~~~~~~~~~~
-There is no configuration hehe

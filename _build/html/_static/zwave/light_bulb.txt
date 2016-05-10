@@ -1,6 +1,0 @@
-.. _light_bulb_devices:
-
-Light Bulbs devices
---------------------
-.. toctree:: open_close/linearlinc_dimmable_ledlight.txt
-   :maxdepth: 2

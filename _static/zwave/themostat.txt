@@ -1,10 +1,22 @@
-Aeotec multi sensor   
+.. _themostat_devices:
+
+Themostat devices
 -------------------------
+.. toctree:: themostat/honeywell_programmable.txt
+	:maxdepth: 2
 
-.. image:: ../images/aeotec_door_window_sensor.jpg
-.. :align: center
+.. toctree:: themostat/rcs_communicating.txt
+	:maxdepth: 2
 
+.. toctree:: themostat/2gig_ct100_programmable.txt
+	:maxdepth: 2
 
-Configuration  
-~~~~~~~~~~~~~~~
-There is no configuration hehe
+.. toctree:: themostat/gocontrol_gctbz48_themostat.txt
+	:maxdepth: 2
+
+.. toctree:: themostat/ge_interlogix_iszwtstat300_programmable.txt
+	:maxdepth: 2
+
+.. toctree:: themostat/remotec_zts110_smart_themostat.txt
+	:maxdepth: 2
+

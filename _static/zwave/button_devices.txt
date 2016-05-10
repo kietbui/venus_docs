@@ -1,10 +1,10 @@
-Aeotec multi sensor   
--------------------------
+.. _button_devices:
 
-.. image:: ../images/aeotec_door_window_sensor.jpg
-.. :align: center
-
-
-Configuration  
-~~~~~~~~~~~~~~~
-There is no configuration hehe
+Button devices
+--------------------
+.. toctree:: button_device/aeon_keyfob_gen5.txt
+	:maxdepth: 2
+	
+.. toctree:: button_device/aeon_panic_button.txt
+	:maxdepth: 2
+	

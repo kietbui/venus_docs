@@ -2,5 +2,11 @@
 
 Light Bulbs devices
 --------------------
-.. toctree:: open_close/linearlinc_dimmable_ledlight.txt
-   :maxdepth: 2
+.. toctree:: light_bulb/linearlinc_dimmable_ledlight.txt
+	:maxdepth: 2
+   
+.. toctree:: light_bulb/gocontrol_br30_indoor_floodlight.txt
+	:maxdepth: 2
+   
+.. toctree:: light_bulb/gocontrol_dimmable_ledlight.txt
+	:maxdepth: 2

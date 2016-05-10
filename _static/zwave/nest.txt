@@ -1,10 +1,13 @@
-Aeotec multi sensor   
+.. _nest_devices:
+
+NEST devices
 -------------------------
+.. toctree:: nest/nest_themostat.txt
+	:maxdepth: 2
 
-.. image:: ../images/aeotec_door_window_sensor.jpg
-.. :align: center
+.. toctree:: nest/nest_cam.txt
+	:maxdepth: 2
 
-
-Configuration  
-~~~~~~~~~~~~~~~
-There is no configuration hehe
+.. toctree:: nest/nest_alarm.txt
+	:maxdepth: 2
+	

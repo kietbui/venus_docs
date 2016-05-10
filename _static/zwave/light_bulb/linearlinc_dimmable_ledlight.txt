@@ -7,13 +7,23 @@ LinearLinc Dimmable LED light
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
-	**To add device to VENUS, below actions are required:**
+	#. Newly add to VENUS network
 
 	- Press "Add button" (button '+') in app
-	- Reset device: T.B.D
+	- Turn the power to the bulb ON.
 	- Wait for VENUS scan & detect this device and inform in app
-	- Reset device again to complete adding device to VENUS
+	
+	#. Reset device to add to new target VENUS network
+
+	- Press "Add button" (button '+') in app
+	- Reset device: turn the power to the bulb ON then OFF four times **within four seconds**.
+			The Smart LED Light Bulb will fl ash twice when the reset occurs.
+	- Wait for VENUS scan & detect this device and inform in app
 
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	There is no configuration for this device.
+	**1. Dim level memory**
+		
+		0: Bulb will be full brightness when turned on (default)
+		
+		1: Bulb will turn on to the last dim level setting

@@ -20,7 +20,7 @@ This document is created by VEriKsystem .ltd company.
 
 Z-Wave
 -------------
-	- :ref:`Open & Close <open_close_devices>`
+	- :ref:`Open & Close Sensors<open_close_devices>`
 	- :ref:`Motion Sensors <motion_sensor_devices>`
 	- :ref:`Switches & Dimmers <switch_dimmer_devices>`
 	- :ref:`Light Bulbs <light_bulb_devices>`
@@ -41,12 +41,6 @@ Zigbee
 	- :ref:`Switches & Dimmers <zig_switch_dimmer_devices>`
 	- :ref:`Light Bulbs <zig_light_bulb_devices>`
 	- :ref:`Meters <zig_meter_devices>`
-	- :ref:`Alarms & Sirens <zig_alarm_siren_devices>`
 	- :ref:`Water/Flood Sensors <zig_water_flood_devices>`
-	- :ref:`AMAZON <zig_amazon_devices>`
-	- :ref:`Button Devices <zig_button_devices>`
-	- :ref:`NEST <zig_nest_devices>`
 	- :ref:`Lock <zig_lock_devices>`
 	- :ref:`Themostat <zig_themostat_devices>`
-	- :ref:`Others <zig_other_devices>`
-
