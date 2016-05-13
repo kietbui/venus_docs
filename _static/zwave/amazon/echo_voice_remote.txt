@@ -1,7 +1,7 @@
 Echo voice remote
 -------------------------------
 
-	.. image:: ../../images/amazon/echo_voice_remote.jpg
+	.. image:: ../../images/amazon/echo_voice_remote.png
 	.. :align: left
 	
 

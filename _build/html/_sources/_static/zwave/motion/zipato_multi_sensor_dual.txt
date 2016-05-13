@@ -1,0 +1,56 @@
+Zipato Z-Wave Multi-sensor Dual (VS-ZP3102.US)
+-------------------------------------------------------------------------------
+
+	.. image:: ../../images/motion/zipato_multi_sensor_dual.jpg
+	.. :align: left
+	
+
+Basic operation  
+~~~~~~~~~~~~~~~~~~~~~~~
+	- Two-in-one Z-Wave sensor
+	- Measures room temperature
+	- Detects movement up to 32 feet away
+	- Monitors for activity or for lack of activity
+	- Built-in tamper protection
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Insert battery
+		- The LED starts flash slowly
+		- Press the **program switch** once
+		- The LED on the sensor should stop flashing
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Press the **program switch** once (reset)
+		- The LED starts flash slowly
+		- Press the **program switch** once (re-add)
+		- The LED on the sensor should stop flashing
+		- Wait for VENUS scan & detect this device and inform in app
+		
+		
+	.. image:: ../../images/motion/zipato_multi_sensor_dual_i.png
+	.. :align: left
+
+How to add/remove associated device(s) to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	**To add associated device(s) to this sensor, below action is required:**
+	
+	- Add z-wave notified-devices (which will be associated to this sensor) to VENUS
+	- Select Associate button and then select notified-device(s) to add
+	- Remove device's cover case to turn device into awake mode
+	- If successful, pop-up notification displays in VENUS app
+	
+	**To remove associated device(s) from this sensor, below action is required:**
+	
+	- Select Associate button and then select notified-device(s) to remove
+	- Remove device's cover case to turn device into awake mode
+	- If successful, pop-up notification displays in VENUS app
+
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration for this device.

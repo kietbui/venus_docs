@@ -1,0 +1,40 @@
+Intermatic HA06C Indoor Wall Switch
+--------------------------------------------------------------------------------------------------------------------------
+
+	.. image:: ../../images/switch_dimmer/intermatic_ha06c_indoor_wall_switch.jpg
+	.. :align: left
+	
+
+Brief information 
+~~~~~~~~~~~~~~~~~~~~~~~
+	- Controls appliances up to 15 Amps and lighting (including compact fluorescent bulbs)
+	- Heavy-duty 3 prong plug and receptacle
+	- Manual override ability
+	- LED shows feedback from controller during setup and that it is working
+	- For indoor use only
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Powerup device
+		- Press and release Program button
+		- LED will stop flash
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Press and release Program button (to reset)
+		- LED will flash continuously
+		- Press and release Program button once more (to add)
+		- LED will stop flash
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/switch_dimmer/intermatic_ha06c_indoor_switch_d.png
+	.. :align: left
+		
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration in this device.
+		

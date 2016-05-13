@@ -2,10 +2,10 @@
 
 AMAZON devices
 --------------------
-	.. toctree:: amazon/amazon_echo.txt
+.. toctree:: amazon/amazon_echo.txt
 	:maxdepth: 2
 	
-	.. toctree:: amazon/echo_voice_remote.txt
+.. toctree:: amazon/echo_voice_remote.txt
 	:maxdepth: 2
 
 

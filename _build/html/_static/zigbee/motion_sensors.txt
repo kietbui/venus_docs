@@ -1,0 +1,16 @@
+.. _zig_motion_sensor_devices:
+
+Motion sensor devices
+--------------------
+.. toctree:: motion/smartsense_motion_sensor.txt
+	:maxdepth: 2
+
+.. toctree:: motion/zbms3_motion_sensor.txt
+	:maxdepth: 2
+
+
+.. toctree:: motion/nyce_motion_sensor.txt
+	:maxdepth: 2
+
+.. toctree:: motion/nyce_curtain_motion_sensor.txt
+	:maxdepth: 2

@@ -1,0 +1,34 @@
+Schlage RP200VZVNNSL - Z-Wave Plugin Dimmer Module
+--------------------------------------------------------------------------------------------------------------------------
+
+	.. image:: ../../images/switch_dimmer/schlage_plugin_dimmer_module.jpg
+	.. :align: left
+	
+
+Brief information 
+~~~~~~~~~~~~~~~~~~~~~~~
+	- Reduce energy use and save money by turning lights and small appliances off
+	- Set to automatically trigger ''lights on'' with a Schlage Home Keypad Lock when you enter your code at the door
+	- Expands the reach of Z-Wave in your home by extending its range up to 200 additional feet
+	- This Z-Wave enabled product communicates wirelessly to other Z-Wave products
+	- Works with incandescent table and floor lamps, use the Schlage Home Appliance Module for lamps with CFL bulbs
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Plugin device to power socket
+		- Double press program button in front of device
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Double press program button in front of device (to reset)
+		- Double press program button in front of device once more (to add)
+		- Wait for VENUS scan & detect this device and inform in app
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration in this device.
+		

@@ -1,0 +1,7 @@
+.. _lock_devices:
+
+Lock devices
+--------------------
+.. toctree:: lock/schlage_connect_camelot.txt
+	:maxdepth: 2
+	

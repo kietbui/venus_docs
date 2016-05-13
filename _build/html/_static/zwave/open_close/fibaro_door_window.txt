@@ -1,0 +1,41 @@
+FIBARO Z-Wave Door/Window Sensor
+--------------------------------
+
+	.. image:: ../../images/door_window/fibaro_door_window.jpg
+	.. :align: left
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**To add device to VENUS, below actions are required:**
+	
+	- Press "Add button" (button '+') in app
+	- Reset device: Triple-press TMP button
+	- Wait for VENUS scan & detect this device and inform in app
+	- Reset device again to complete adding device to VENUS
+	
+	.. image:: ../../images/door_window/fibaro_door_window_b.png
+	.. :align: left
+	
+How to add/remove associated device(s) to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	**To add associated device(s) to this sensor, below action is required:**
+	
+	- Add z-wave notified-devices (which will be associated to this sensor) to VENUS
+	- Select Associate button and then select notified-device(s) to add
+	- Wake-up this sensor: triple-press TMP button
+	- If successful, pop-up notification displays in VENUS app
+	
+	**To remove associated device(s) from this sensor, below action is required:**
+	
+	- Select Associate button and then select notified-device(s) to remove
+	- Wake-up this sensor: triple-press TMP button
+	- If successful, pop-up notification displays in VENUS app
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Signal trigger device (Trigger to associated devices)**
+	
+	- 1 - 99: dimmer value will be sent to associated devices. 
+		In case non-dimmer device associated, ON trigger is sent.
+	

@@ -1,0 +1,49 @@
+MIMOLite - Z-wave Multi-Input/Output Dry Contact Bridge
+--------------------------------------------------------------------------------------------------------------------------
+
+	.. image:: ../../images/other/fortrezz_mimolite_dry_bridge.jpg
+	.. :align: left
+	
+
+Brief information 
+~~~~~~~~~~~~~~~~~~~~~~~
+	- BEFORE YOU BUY: Check to make sure your home automation controller / security panel is interoperable with our device. NOT ALL Z-wave Controllers are compatible. Please visit our website, ask your controller manufacturer, or call us with questions.
+	- One 24VDC / 110 VAC Relay to control any low voltage device via Z-wave. Controls garage doors, motorized shades, gates, solenoid valves, etc. Relay can be set as momentary or Latched.
+	- One SIGNAL Input terminal block to receive low voltage (digital, analog, or pulse) signals via Z-wave. Use with reed sensors, contact sensors, door bell buttons, Security panel relay's, water leak probes, water level sensors, temperature probes, float switches, etc.
+	- 9V AC power adaptor included. Low voltage wire is NOT included
+	- Please visit our website and youtube page for application details and how-to video's. Wiring diagrams are also downloadable on our website product page under "files"
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Power-up device
+		- The LED has a periodic single blink
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Press the button once (to reset)
+		- Press the button once more (to add)
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/other/fortrezz_mimolite_dry_bridge_i.png
+	.. :align: left
+		
+How to add/remove associated device(s) to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	**To add associated device(s) to this sensor, below action is required:**
+	
+	- Add z-wave notified-devices (which will be associated to this sensor) to VENUS
+	- Select Associate button and then select notified-device(s) to add
+	- If successful, pop-up notification displays in VENUS app
+	
+	**To remove associated device(s) from this sensor, below action is required:**
+	
+	- Select Associate button and then select notified-device(s) to remove
+	- If successful, pop-up notification displays in VENUS app
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration in this device.

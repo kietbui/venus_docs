@@ -1,0 +1,10 @@
+.. _button_devices:
+
+Button devices
+--------------------
+.. toctree:: button_device/aeon_keyfob_gen5.txt
+	:maxdepth: 2
+	
+.. toctree:: button_device/aeon_panic_button.txt
+	:maxdepth: 2
+	

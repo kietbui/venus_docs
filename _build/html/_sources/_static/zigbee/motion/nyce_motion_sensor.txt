@@ -1,0 +1,24 @@
+NYCE NCZ-HA Zigbee Motion Sensor
+-------------------------------------
+
+	.. image:: ../../images/motion/nyce_motion.jpg
+	.. :align: left
+
+Brief information
+~~~~~~~~~~~~~~~~~~~~
+	Nyce Control’s NCZ-3041 is a wireless motion sensor using the ZigBee radio protocol. It is used in conjunction with a low RF transmit power wireless ZigBee network to monitor the occupancy state of indoor areas, and provide this information to other devices operating in a ZigBee Home Automation network. 
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+		- Press "Add button" (button '+') in app
+		- Insert battery and then press Button once
+		- Wait for VENUS scan & detect this device and inform in app
+
+	.. image:: ../../images/motion/nyce_motion_i.png
+	.. :align: left
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration for this device.
+	
