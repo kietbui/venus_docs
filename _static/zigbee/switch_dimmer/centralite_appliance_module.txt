@@ -22,7 +22,7 @@ How to add to VENUS app
 		- Once the LED is ON, release the button. 
 		- Wait for VENUS scan & detect this device and inform in app
 
-	.. image:: ../../images/motion/smartthing_smartpower_outlet_d.png
+	.. image:: ../../images/switch_dimmer/smartthing_smartpower_outlet_d.png
 	.. :align: left
 	
 Configuration description
