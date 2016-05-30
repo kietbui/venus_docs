@@ -5,7 +5,7 @@ ZOOZ Z-Wave Plus Motion Sensor ZSE02
 	.. :align: left
 	
 
-Basic operation  
+Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- 20 feet motion detection and wireless notifications (when included to a Z-Wave gateway controller)
 	- Z-Wave Plus certified product: ZC10-16045043. Improved 500 chip for faster and safer wireless communication

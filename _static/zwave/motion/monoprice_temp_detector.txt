@@ -5,7 +5,7 @@ Monoprice Z-Wave Motion Detector with Temperature Sensor, NO LOGO by Monoprice
 	.. :align: left
 	
 
-Basic operation  
+Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- Uses an infrared sensor to detect motion and sends a Z-Wave signal when motion is detected within its detection range, 
 	Fully compliant with other Z-Wave network devices, Includes adhesive tape and a CR123A battery for power.

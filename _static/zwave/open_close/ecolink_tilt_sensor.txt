@@ -4,20 +4,27 @@ Ecolink Tilt Sensor
 	.. image:: ../../images/door_window/ecolink_tilt_sensor.jpg
 	.. :align: left
 
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~
+	- Monitors open/closed status of garage door
+	- Triggers alert when tilted
+	- Integrates into a Z-Wave network
+	- Wireless range up to 100 feet
+	- Mounting hardware included
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
-	To add device to VENUS, below actions are required:
-	
-	- Press "Add button" (button '+') in app
-	- Reset device: 
-		
-		**The first time added**: Remove the plastic pull-tab from the back of device
-		
-		**Otherwise**, remove battery for at least 5 seconds, re-install battery
 
-	- Wait for VENUS scan & detect this device and inform in app
-	- Reset device again to complete adding device to VENUS
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Remove the plastic pull-tab from the back of device
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Remove battery for at least 5 seconds, re-install battery to reset
+		- Remove battery and insert again to add
+		- Wait for VENUS scan & detect this device and inform in app
 	
 	.. image:: ../../images/door_window/ecolink_tilt_sensor_i.png
 	.. :align: left
@@ -42,8 +49,30 @@ Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	**1. Signal trigger device (Trigger to associated devices)**
 	
-	- ON (default): When the door/window OPENNED, the associated devices are triggered as ON. 
-			And when the door/window is CLOSED, the associated devices are triggered as OFF.
-	- OFF: When the door/window OPENED, the associated devices are triggered as ON. 
-			And when the door/window is CLOSED, no trigger to associated devices
+		==================== =====================================================================================================================
+		 Available setting    ON - When the door/window OPENNED, the associated devices are triggered as ON.
+		 
+		                            And when the door/window is CLOSED, the associated devices are triggered as OFF.
+
+		                      OFF - When the door/window OPENED, the associated devices are triggered as ON. 
+	   
+		                            And when the door/window is CLOSED, no trigger to associated devices.
+		 Default              ON
+		==================== =====================================================================================================================
 	
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Technical specification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	#. Configuration SET command format
+		
+		=============== ========= ================== =================================== ============
+		 command class   command   parameter number   default(1) - reserve(4) - size(3)   config val
+		=============== ========= ================== =================================== ============
+	
+		- Command_class: COMMAND_CLASS_CONFIGURATION
+		- Command: CONFIGURATION_SET
+		- Parameter number: 0x63
+		- Size: 1
+		- Configuration value: 0 ~ 99 or 255

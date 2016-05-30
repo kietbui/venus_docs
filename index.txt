@@ -36,7 +36,7 @@ Z-Wave
 
 Zigbee
 --------------
-	- :ref:`Open & Close <zig_open_close_devices>`
+	- :ref:`Open & Close Sensors<zig_open_close_devices>`
 	- :ref:`Motion Sensors <zig_motion_sensor_devices>`
 	- :ref:`Switches & Dimmers <zig_switch_dimmer_devices>`
 	- :ref:`Light Bulbs <zig_light_bulb_devices>`

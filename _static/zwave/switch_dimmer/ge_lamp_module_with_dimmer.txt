@@ -20,14 +20,14 @@ How to add to VENUS app
 	**1. Activation**
 		- Press "Add button" (button '+') in app
 		- Plugin device to power supply socket
-		- Triple press **z-wave button**
+		- Press **z-wave button** once
 		- Wait for VENUS scan & detect this device and inform in app
 	
 	**2. Reset then re-add**
 		- Press "Add button" (button '+') in app
 		- Plugin device to power supply socket
-		- Triple press **z-wave button** (to reset)
-		- Triple press **z-wave button** one more time (to add)
+		- Press **z-wave button** once (to reset)
+		- Press **z-wave button** once more time (to add)
 		- Wait for VENUS scan & detect this device and inform in app
 	
 Configuration description

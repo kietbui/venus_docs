@@ -5,11 +5,11 @@ GoControl – Premium Z-Wave Home motion sensor
 	.. :align: left
 	
 
-Basic operation  
+Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- During normal operation without detecting any motion, the detector’s red LED will be off.
 	- When the sensor detects motion, it will send a status of “ON” and alarm report (Type: 07, Level: 0xFF) to any associated nodes. The red LED will flash once. 
-	-When no movement is detected for 3 minutes (adjustable by configuration setting), the detector will send a status of “OFF” (Basic Set, Value: 0x00) and alarm restore report (Type: 07, Level: 0x00) to any associated nodes, then the unit assumes “sleep” mode.
+	- When no movement is detected for 3 minutes (adjustable by configuration setting), the detector will send a status of “OFF” (Basic Set, Value: 0x00) and alarm restore report (Type: 07, Level: 0x00) to any associated nodes, then the unit assumes “sleep” mode.
 	- The motion detector is equipped with a tamper switch. If the cover of the detector is removed, it will send an alarm report (Type: 07, Level: 0xFF) and the red LED will light constant.
 
 How to add to VENUS app  

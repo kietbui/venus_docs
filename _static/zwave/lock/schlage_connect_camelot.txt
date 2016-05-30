@@ -20,48 +20,46 @@ How to add to VENUS app
 
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	#. Beeper
 	
-		==============	===============================================================================================================
-		 Value				Description
-		==============	===============================================================================================================
-		ON					Default. Enable sound when pressing key.
-		
-		OFF					Disable sound when pressing key.
-		==============	===============================================================================================================
+	#. Enable beeper
+	
+		Enable/Disable beeper when pressing
+			+ Available:
+				- Disable
+				- Enable
+			+ Default: Disable
+			+ Parameter 3, 1 byte size
+	
+	#. Enable vacation mode
+	
+		Enable/Disable vacation mode. When this mode is enabled, pass-code can not be used to open the door. Key is required.
+			+ Available:
+				- Disable
+				- Enable
+			+ Default: Disable
+			+ Parameter 4, 1 byte size
+	
+	#. Enable lock & leave
+	
+		Enable/Disable lock & leave mode. This mode is enabled supports user 1 press to schlage button from outside to lock the door.
+			+ Available:
+				- Disable
+				- Enable
+			+ Default: Disable
+			+ Parameter 5, 1 byte size
 
-	#. Vacation mode
-	
-		==============	===============================================================================================================
-		 Value				Description
-		==============	===============================================================================================================
-		 ON					The door can not be un-locked by User-code. This mode is apply when away from home.
-
-		 OFF					Default. 
-		==============	===============================================================================================================
-	
-	#. Lock and leave
-	
-		==============	======================================================================================================================================
-		 Value				Description
-		==============	======================================================================================================================================
-		 ON					Default. Door can be locked from outside by pressing Schlage button and rotate the thumbturn.
-		 OFF					Door is locked when input user-code and rotate the thumbturn. With this setting, unauthorized person from locking the door from the outside
-		==============	======================================================================================================================================
-	
 	#. Auto lock
 	
-		==============	===============================================================================================================
-		 Value				Description
-		==============	===============================================================================================================
-		 ON					Door is auto-lock after amount of time
-		 OFF					Disable auto-lock feature
-		==============	===============================================================================================================
-	
-	#. Length of pass-code
-	
-		==============	===============================================================================================================
-		 Value				Description
-		==============	===============================================================================================================
-		 4-8					Pass-code length
-		==============	===============================================================================================================
+		Device is auto locked after a period of time when enabling this feature.
+			+ Available:
+				- disable
+				- enable
+			+ Default: enable
+			+ Parameter 15, 1 byte size
+		
+	#. User pin code length
+		
+		The length of user pin code is configured by this setting.
+			+ Available: 4 - 8
+			+ Default: 4
+			+ Parameter 16, 1 byte size

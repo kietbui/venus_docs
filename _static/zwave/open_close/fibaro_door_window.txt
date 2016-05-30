@@ -4,6 +4,13 @@ FIBARO Z-Wave Door/Window Sensor
 	.. image:: ../../images/door_window/fibaro_door_window.jpg
 	.. :align: left
 
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~
+	- Door sensor can detect closing and opening of any door/window or garage door openings. Door Sensor can also be paired with DS18B20 to input temperature sensor.
+	- The Door / Window Sensor has a unique feature in which it can automatically trigger pre-programmed scenes. (may require compatible controller)
+	- The Door/Window Sensor is extremely compact and is the smallest unit of this type available on the market. Its extremely lightweight and thin design makes it almost invisible on any door/window.
+	- The Fibaro Door / Window Sensor is available in seven colors. Select the best color match to your home interior designs and enjoy the undisturbed beauty, security and comfort.
+	- Z-Wave Certifed Sensor: Cert ID: ZC08-14070006/ Frequency Region: U.S./Canada/Mexico, Z-Wave Library Version: 4.55.06
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,8 +41,67 @@ How to add/remove associated device(s) to
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	**1. Signal trigger device (Trigger to associated devices)**
-	
-	- 1 - 99: dimmer value will be sent to associated devices. 
-		In case non-dimmer device associated, ON trigger is sent.
-	
+	#. Signal trigger device (Trigger to associated devices)
+
+		=========================== ==================================================================================================
+		 Available                   1 - 99: Dim value (Multi-level devices)
+		                             255: ON (Binary devices)
+		 Default                     255
+		=========================== ==================================================================================================
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Technical specification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	#. Configuration SET command format
+		
+		B: byte, b: bit, command_class: COMMAND_CLASS_CONFIGURATION, command: CONFIGURATION_SET
+		
+		=============== ========= ================== =================================== ============== ============== ===== ==============
+		 command class   command   parameter number   default(1) - reserve(4) - size(3)   config val 1   config val 2   ...   config val n
+		=============== ========= ================== =================================== ============== ============== ===== ==============
+		
+		- Parameter 1 - 2 bytes: alarm cancellation delay
+			+ Available setting value: 0 ~ 65535 seconds
+			+ Default: 0
+		
+		- Parameter 2 - 1 byte: device status change signalled by LED
+			+ 0x00: Not apply
+			+ 0x01: LED indicates device status change (Default)
+			
+		- Parameter 3 - 1 byte: Type of IN input
+			+ 0x00: INPUT_NC (Normal close) (Default)
+			+ 0x01: INPUT_NO (Normal open)
+			+ 0x02: INPUT_MONOSTABLE
+			+ 0x03: INPUT_BISTABLE
+
+		- Parameter 5 - 1 byte: Type of control frame transmitted for association group 1, activated via IN input. The parameter allows you to specify the type of an alarm frame or to force control frames transmission (BASIC_SET)
+			+ 0 – ALARM GENERIC frame
+			+ 1 – ALARM SMOKE frame
+			+ 2 – ALARM CO frame
+			+ 3 – ALARM CO2 frame
+			+ 4 – ALARM HEAT frame
+			+ 5 – ALARM WATER frame
+			+ 255 – Control frame BASIC_SET (Default)
+			
+		- Parameter 7 - 1 byte: Value of the parameter specifying the forced level of dimming/ope-ning roller blinds when “switch on”/”open” commands are sent to devices from association group no.1.
+			+ Available setting value: 0 ~ 99 and 255
+			+ Default: 255
+			
+		- Parameter 9 - 1 byte: Deactivating transmission of the alarm cancelling frame or the control frame deactivating the device (Basic). It allows for disabling the function of deactivating the device and cancelling alarms for devices associated with IN input.
+			+ 0x00: for association group no. 1 information is sent (default)
+			+ 0x01: for association group no. 1 information is not sent.
+			
+		- Parameter 12 - 1 byte: Sensitivity to temperature changes. The gap of temperature between 2 detected times. If the difference is more than setting value, alarm report will be sent.
+			+ Available setting value: 0 ~ 255 (0 ~ 16 celcius, 32 ~ 60,8 Fahrenheit)
+			+ Default: 8 (0,5 celcius)
+			+ If the wake-up interval is set to 255 seconds, temperature report will be sent according to the interval
+			+ if the wake-up interval is set to over 255, temperature report will be sent each ca. 4 minutes
+		
+		- Parameter 13 - 1 byte: Sending an alarm or control frame (for IN input, depending on parameter no.5 value), and TMP button alarm frame. The frame is sent in “broadcast” mode, i.e. to all devices within range - information sent in this mode is not repeated by the mesh network
+			+ 0: IN and TMP Broadcast mode inactive (Default)
+			+ 1: IN broadcast mode active, TMP broadcast mode inactive
+			+ 2: IN broadcast mode inactive, TMP broadcast mode active
+			+ 3: IN and TMP broadcast mode active
+		

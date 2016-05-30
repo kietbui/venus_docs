@@ -5,7 +5,7 @@ ZOOZ Z-Wave Plus 4-in-1 Sensor ZSE40 (motion/light/temperature/humidity)
 	.. :align: left
 	
 
-Basic operation  
+Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- 4 smart sensors in 1 compact device.
 	- 7 levels of motion sensitivity to choose from. 3 modes for motion / temp led indicator notifications

@@ -32,3 +32,10 @@ How to add to VENUS app
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	There is no configuration in this device.
+
+Factory reset
+~~~~~~~~~~~~~~~~~~~
+	#. Remove battery and then remove the interior escutcheon to access the reset button
+	#. Reset button is located as below image
+	#. Hold down the reset button for minimum 3 seconds 
+	#. Re-install battery and then release

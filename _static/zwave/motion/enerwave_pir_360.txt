@@ -5,7 +5,7 @@ Enerwave ZWN-BPC Z-Wave Celling Occurpancy Motion Sensor PIR 360 degree sensor
 	.. :align: left
 	
 
-Basic operation  
+Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- ZWN-BPC Occupancy PIR sensor enabled with Z-Wave wireless control and Z-wave association function
 	- Detects motions, automatically control ON/OFF/Dimming/thermostat of 5 z-wave associated or group scene devices

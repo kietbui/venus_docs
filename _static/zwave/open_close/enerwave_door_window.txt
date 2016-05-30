@@ -35,5 +35,5 @@ How to add/remove associated device(s) to
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	T.B.D
+	There is no configuration for this device.
 	

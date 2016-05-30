@@ -5,7 +5,7 @@ Intermatic CA9000 InTouch Wireless Indoor PIR Occurpancy Sensor
 	.. :align: left
 	
 
-Basic operation  
+ Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- Multiple location on/off control when used with Z-wave enabled devices
 	- Pre-set scene control when used with up to five Z-wave enabled devices
@@ -51,4 +51,4 @@ How to add/remove associated device(s) to
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	T.B.D
+	There is no configuration in this device.

@@ -23,7 +23,7 @@ How to add to VENUS app
 	**Reset and reconnect**
 		- Press "Add button" (button '+') in app
 		- Press and hold **Connect button** while inserting battery.
-		- Release the button when the LED is ON. The LED will blink blue while attemping to connect.
+		- Release the button when the LED is amber. The LED will blink blue while attemping to connect.
 		- Wait for VENUS scan & detect this device and inform in app
 
 	.. image:: ../../images/water_flood/smartsense_moisture_i.png

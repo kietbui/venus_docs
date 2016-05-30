@@ -11,8 +11,14 @@ Brief information
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
 		- Press "Add button" (button '+') in app
-		- Insert battery and then press Button once
+		- Pull out plastic pull-tab. In case inclusion mode of this device time-out, press button 4 times
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset before adding**
+		- Press "Add button" (button '+') in app
+		- Press button 6 ~ 10 times, device is reset and auto join to detected network
 		- Wait for VENUS scan & detect this device and inform in app
 
 	.. image:: ../../images/motion/nyce_motion_i.png
@@ -20,5 +26,12 @@ How to add to VENUS app
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	There is no configuration for this device.
+	#. Clear motion interval
+	
+		Period of time to clear motion status.
+		
+		=========================== =============================================================================================
+		 Available setting           4 ~ 65535 (in seconds)
+		 Default setting             10
+		=========================== =============================================================================================
 	

@@ -5,7 +5,7 @@ Zipato Z-Wave multi sensor Trio, White
 	.. :align: left
 	
 
-Basic operation  
+Brief information 
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- Reliable detection of open/closed status as well and metering functions
 	- Measures light levels and room temperature

@@ -19,11 +19,18 @@ Basic information
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
-	To add device to VENUS, below actions are required:
+	
+	**Newly add device to Zigbee network**
 		- Press "Add button" (button '+') in app
-		- Reset device: un-plug battery then plug it back
+		- Remove the plastic pull-tab from the back of device
 		- Wait for VENUS scan & detect this device and inform in app
-		- Reset device again to complete adding device to VENUS
+	
+	**Reset and reconnect**
+		- Press and hold Connect button for 6 seconds to reset device
+		- Press "Add button" (button '+') in app
+		- Press Connect button once to add
+		- Wait for VENUS scan & detect this device and inform in app
+	
 	
 	.. image:: ../../images/door_window/smartsense_multi_sensor_i.png
 	.. :align: left

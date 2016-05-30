@@ -1,7 +1,0 @@
-.. _zig_meter_devices:
-
-Meter devices
--------------------------
-.. toctree:: meter/smartenit_ha_controller_dual_load.txt
-	:maxdepth: 2
-

@@ -4,6 +4,13 @@ FIBARO flood sensor
 	.. image:: ../../images/water_flood/fibaro_flood_sensor.jpg
 	.. :align: left
 	
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~~~
+	- The Ultimate Z-wave water leak sensor/detector, with temperature and tilt sensor
+	- Get alerted immediately on your smart phone, tablet, our email when there is a leak. Trigger certain lights, activate specific scenes or even sirens to activate if there is a threat
+	- Three 24K plated gold telescoping feat always make sure its making contact even on uneven surfaces and never corodes. Built for longevity.
+	- Built in temperature sensor alerts through your smart hub's app and visually/ audibly at sensor if there is a suddon rise or fall in temperature
+	- Z-Wave Certifed Sensor: Certification ID ZC08-14070006 / Frequency Region: U.S./Canada/Mexico, Z-Wave Library Version: 4.55.00
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~

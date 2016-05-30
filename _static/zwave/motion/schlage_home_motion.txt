@@ -4,18 +4,36 @@ Schlage Home Motion Sensor
 	.. image:: ../../images/motion/schlage_home_motion.jpg
 	.. :align: left
 
+Brief information
+~~~~~~~~~~~~~~~~~~~~~
+	- For indoor use only
+	- 90° wide angle detection pattern
+	- Operating frequency: 908.42 MHz
+	- Operation range: Up to 100 feet (30.5 meters) line-of-sight
+	- Operating temperature: 0° – 49°C, 32° – 120°F
+	- Battery type required: 3V Lithium CR123A
+	- Battery life approximately 3 years
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
-	To add device to VENUS, below actions are required:
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Remove the plastic pull-tab from the back of device
+		- Wait for VENUS scan & detect this device and inform in app
 	
-	- Press "Add button" (button '+') in app
-	- Reset device: remove battery for at least 5 seconds then re-install
-	- Wait for VENUS scan & detect this device and inform in app
-	- Reset device again to complete adding device to VENUS
-	
-	*Back-side of Schlage motion sensor is similar to Ecolink motion sensor*
-	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Use a pin or paper clip to press the program button on the back of the Sensor case
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/motion/schlage_home_motion_b.png
+	.. :align: left
+
+Jumper setting
+~~~~~~~~~~~~~~~~~~
+	.. image:: ../../images/motion/schlage_home_motion_jumper.png
+	.. :align: left
+
 How to add/remove associated device(s) to
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	**To add associated device(s) to this sensor, below action is required:**

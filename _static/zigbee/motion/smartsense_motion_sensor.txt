@@ -1,4 +1,4 @@
-SmartSense Motuon Sensor
+SmartSense Motion Sensor
 --------------------------------
 
 	.. image:: ../../images/motion/smartsense_motion.jpg

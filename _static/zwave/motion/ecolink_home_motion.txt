@@ -41,8 +41,14 @@ Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	**1. Signal trigger device (Trigger to associated devices)**
 	
-	- ON (default): When detecting motion, the associated devices are triggered as ON. 
-			And when motion ends, the associated devices are triggered as OFF.
-	- OFF: When detecting motion, the associated devices are triggered as ON. 
-			And when motion ends, no trigger to associated device.
+		==================== =====================================================================================================================
+		 Available setting    ON - When the door/window OPENNED, the associated devices are triggered as ON.
+		 
+		                            And when the door/window is CLOSED, the associated devices are triggered as OFF.
+
+		                      OFF - When the door/window OPENED, the associated devices are triggered as ON. 
+	   
+		                            And when the door/window is CLOSED, no trigger to associated devices.
+		 Default              ON
+		==================== =====================================================================================================================
 	

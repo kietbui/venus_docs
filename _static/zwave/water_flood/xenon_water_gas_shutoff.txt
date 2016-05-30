@@ -1,0 +1,34 @@
+XENON Smart Home Automation Black Z-wave Wireless Automatic Water / Gas Valve water shutoff
+-----------------------------------------------------------------------------------------------
+
+	.. image:: ../../images/water_flood/xenon_water_gas_shutoff.jpg
+	.. :align: left
+	
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~~~
+	- Stroke: can be set manually reliable travel or start since the stroke, in place since the stop, the
+	- Shutter control: angle support open and louver adjusting and setting
+	- Control of diversity: built-in wireless receiving, connect the Z-wave wireless home gateway system i
+	- Optional: power and hand function, hand pulling starting function
+	- Safety measures: aluminum alloy shell, motor protection class IP41
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Press the red power button
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset before adding**
+		- Press "Add button" (button '+') in app
+		- Press the red power button to reset
+		- Press the red power button once again to add
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/water_flood/xenon_water_gas_shutoff_1.jpg
+	.. :align: left
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration in this device.

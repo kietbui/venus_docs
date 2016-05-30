@@ -5,7 +5,7 @@ Zipato Z-Wave Multi-sensor Dual (VS-ZP3102.US)
 	.. :align: left
 	
 
-Basic operation  
+Basic information
 ~~~~~~~~~~~~~~~~~~~~~~~
 	- Two-in-one Z-Wave sensor
 	- Measures room temperature

@@ -22,8 +22,11 @@ How to add to VENUS app
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	**1. LED indicator**
+	#. LED indicator
 	
-	- Checked: LED is ON when device is turned-off
-	- Un-checked (Default): LED is ON when device is turned-on
-	
+		This setting indicates LED status compatible with device status
+			+ Available:
+				- 0: LED status is not compatible with device's status
+				- 1: LED status is compatible with device's status
+			+ Default: 0
+			+ Parameter 3, 1 byte size
