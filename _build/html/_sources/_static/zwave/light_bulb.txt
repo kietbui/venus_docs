@@ -1,0 +1,24 @@
+.. _light_bulb_devices:
+
+Light Bulbs devices
+--------------------
+.. toctree:: light_bulb/zipato_5color_channels_bulb.txt
+	:maxdepth: 2
+	
+.. toctree:: light_bulb/linearlinc_dimmable_ledlight.txt
+	:maxdepth: 2
+   
+.. toctree:: light_bulb/gocontrol_br30_indoor_floodlight.txt
+	:maxdepth: 2
+   
+.. toctree:: light_bulb/gocontrol_dimmable_ledlight.txt
+	:maxdepth: 2
+
+.. toctree:: light_bulb/aeon_ledlight_bulb_gen5.txt
+	:maxdepth: 2
+
+.. toctree:: light_bulb/aeon_ledlight_bulb_gen5.txt
+	:maxdepth: 2
+
+.. toctree:: light_bulb/domitech_dta19_750_27_dimmable.txt
+	:maxdepth: 2

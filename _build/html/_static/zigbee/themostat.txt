@@ -1,0 +1,6 @@
+.. _zig_themostat_devices:
+
+Themostat devices
+---------------------------------
+.. toctree:: themostat/zen_themostat.txt
+	:maxdepth: 2

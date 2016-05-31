@@ -1,0 +1,44 @@
+.. _motion_sensor_devices:
+
+Motion Sensors
+--------------------
+.. toctree:: motion/aeon_gen5_multi.txt
+   :maxdepth: 2
+   
+.. toctree:: motion/aeon_gen6_multi.txt
+   :maxdepth: 2
+
+.. toctree:: motion/ecolink_home_motion.txt
+   :maxdepth: 2
+   
+.. toctree:: motion/schlage_home_motion.txt
+   :maxdepth: 2
+
+.. toctree:: motion/fibaro_home_motion.txt
+   :maxdepth: 2
+   
+.. toctree:: motion/gocontrol_home_motion.txt
+   :maxdepth: 2
+   
+.. toctree:: motion/enerwave_pir_360.txt
+   :maxdepth: 2
+
+.. toctree:: motion/intermatic_intouch_pir.txt
+   :maxdepth: 2
+   
+
+.. toctree:: motion/everspring_compact_motion.txt
+   :maxdepth: 2
+
+.. toctree:: motion/zipato_multi_sensor_dual.txt
+   :maxdepth: 2
+   
+.. toctree:: motion/zooz_plus_4in1_zse40_sensor.txt
+   :maxdepth: 2
+   
+.. toctree:: motion/zooz_plus_moiton.txt
+   :maxdepth: 2
+
+.. toctree:: motion/monoprice_temp_detector.txt
+   :maxdepth: 2
+   

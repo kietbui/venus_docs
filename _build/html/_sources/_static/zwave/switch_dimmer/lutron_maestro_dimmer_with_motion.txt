@@ -1,0 +1,33 @@
+Lutron Maestro LED Dimmer switch with motion sensor, no neutral required, MSCL-OP153M-WH, White
+--------------------------------------------------------------------------------------------------------------------------
+
+	.. image:: ../../images/switch_dimmer/lutron_maestro_dimmer_with_motion.jpg
+	.. :align: left
+	
+
+Brief information 
+~~~~~~~~~~~~~~~~~~~~~~~
+	- Works with most dimmable CFL/LED bulbs and incandescent/halogen bulbs (please see the Compatible Bulb List under Technical Specification below)
+	- For use in Single Pole, 3-Way, or Multi-Location applications
+	- Up to 600 watts of incandescent or halogen, 150 watts of dimmable CFL or dimmable LED
+	- Automatically turn lights on and off based on room occupancy with added functionality of a dimmer
+	- Wallplate not included
+	- Works with mixed loads of bulbs
+	- Senses daylight, so lights don't turn on inadvertently (optional)
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+		- Press "Add button" (button '+') in app
+		- Pull FASS toward into OFF position
+		- Press and hold Tap button 
+		- Push FASS into ON position while continue holding tap button
+		- Approximately 5 seconds until LED blinks quickly
+		- Wait for VENUS scan & detect this device and inform in app
+
+	.. image:: ../../images/switch_dimmer/lutron_maestro_dimmer_with_motion_d.png
+	.. :align: left
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration in this device.

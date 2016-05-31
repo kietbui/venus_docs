@@ -1,0 +1,57 @@
+Everspring Water/Flood Sensor
+-------------------------------
+
+	.. image:: ../../images/water_flood/everspring_flood_sensor.jpg
+	.. :align: left
+	
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~~~
+	- Battery: 1.5V AAx3 pieces
+	- Battery life: about 1 year, @25oC standby mode
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Insert battery
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Quickly triple press link key within 1.5 second to reset
+		- Quickly triple press link key within 1.5 second again to add
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	.. image:: ../../images/water_flood/everspring_flood_sensor_b.png
+	.. :align: left
+
+How to add/remove associated device(s) to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	This device supports 2 association group, 1 node in group #1 and 3 nodes in group #2.
+	
+	**To add associated device(s) to this device, below action is required:**
+	
+	- Add z-wave notified-devices (which will be associated to this sensor) to VENUS
+	- Select Associate button and then select notified-device(s) to add
+	- Wake-up this sensor: Press **Z-Wave button**
+	- If successful, pop-up notification displays in VENUS app
+	
+	**To remove associated device(s) from this sensor, below action is required:**
+	
+	- Select Associate button and then select notified-device(s) to remove
+	- Wake-up this sensor: Press **Z-Wave button**
+	- If successful, pop-up notification displays in VENUS app
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#. Basic set level for associated device
+		When detecting water/flood, below value will be sent to all devices in associated list.
+	================== ============================================================================================================================
+	 Value              Description
+	================== ============================================================================================================================
+	 0                  OFF
+	 1 - 99             ON (For binary switch devices)
+	                    Dim level (For multi-level switch devices)
+	================== ============================================================================================================================
+	

@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Aeon Labs Gen5 Multi-Sensor &mdash;  index documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title=" index documentation" href="../../../index.html"/> 
+
+  
+  <script src="../../js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> 
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Aeon Labs Gen5 Multi-Sensor</a><ul>
+<li><a class="reference internal" href="#brief-information">Brief information</a></li>
+<li><a class="reference internal" href="#how-to-add-to-venus-app">How to add to VENUS app</a></li>
+<li><a class="reference internal" href="#wake-up-information">Wake up information</a></li>
+<li><a class="reference internal" href="#how-to-add-remove-associated-device-s-to">How to add/remove associated device(s) to</a></li>
+<li><a class="reference internal" href="#factory-reset">Factory reset</a></li>
+<li><a class="reference internal" href="#button-pressed-actions-and-events">Button pressed actions and events</a></li>
+<li><a class="reference internal" href="#configuration-description">Configuration description</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html"></a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Aeon Labs Gen5 Multi-Sensor</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../../../_sources/_static/zwave/motion/aeon_gen5_multi.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="aeon-labs-gen5-multi-sensor">
+<h1>Aeon Labs Gen5 Multi-Sensor<a class="headerlink" href="#aeon-labs-gen5-multi-sensor" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><img alt="../../../_images/aeon_gen5_motion.jpg" src="../../../_images/aeon_gen5_motion.jpg" />
+</div></blockquote>
+<div class="section" id="brief-information">
+<h2>Brief information<a class="headerlink" href="#brief-information" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Power Supply: USB DC 5V or battery power(4×AAA batteries)</li>
+<li>Operating Temperature: -10 oC to 60 oC .</li>
+<li>Measured Temperature Range: -10 C to 50 C . Accuracy: ±1 oC .</li>
+<li>Humidity Range: 20% to 80%. Accuracy: ±5% (at 25 oC ).</li>
+<li>Lighting: 0 LUX to 1000 LUX.</li>
+<li>Motion Sensitivity: 3 meters to 5 meters.</li>
+<li>Water Proofing: IP42</li>
+<li>Wireless Range: Up to 500feet/150 metres outdoors.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="how-to-add-to-venus-app">
+<h2>How to add to VENUS app<a class="headerlink" href="#how-to-add-to-venus-app" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>To add device to VENUS, below actions are required:</p>
+<ul class="simple">
+<li>Press &#8220;Add button&#8221; (button &#8216;+&#8217;) in app</li>
+<li>Reset device: input battery or power-supply then <strong>1 time press z-wave button</strong></li>
+<li>Wait for VENUS scan &amp; detect this device and inform in app</li>
+<li>Reset device again to complete adding device to VENUS</li>
+</ul>
+<img alt="../../../_images/aeon_gen5_motion_b.jpg" src="../../../_images/aeon_gen5_motion_b.jpg" />
+</div></blockquote>
+</div>
+<div class="section" id="wake-up-information">
+<h2>Wake up information<a class="headerlink" href="#wake-up-information" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>When battery is used, to wake up device, press and hold its Z-Wave Button for 3 seconds and then release it. Your MultiSensor’s LED should now be solid to indicate that it is active.</li>
+<li>When completing configurating or communicating with device, to put device into sleep mode for battery saving, press and hold its Z-Wave Button for 3 seconds and then release it.</li>
+<li>When power-supply is used, device is in waken up state always.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="how-to-add-remove-associated-device-s-to">
+<h2>How to add/remove associated device(s) to<a class="headerlink" href="#how-to-add-remove-associated-device-s-to" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>To add associated device(s) to this sensor, below action is required:</strong></p>
+<ul class="simple">
+<li>Add z-wave notified-devices (which will be associated to this sensor) to VENUS</li>
+<li>Select Associate button and then select notified-device(s) to add</li>
+<li>Wake-up this sensor: 1 time press <strong>z-wave button</strong></li>
+<li>If successful, pop-up notification displays in VENUS app</li>
+</ul>
+<p><strong>To remove associated device(s) from this sensor, below action is required:</strong></p>
+<ul class="simple">
+<li>Select Associate button and then select notified-device(s) to remove</li>
+<li>Wake-up this sensor: 1 time press <strong>z-wave button</strong></li>
+<li>If successful, pop-up notification displays in VENUS app</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="factory-reset">
+<h2>Factory reset<a class="headerlink" href="#factory-reset" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Press and hold z-wave button for 20 seconds and then release. LED will stay in solid for 2 seconds and then turn off indicates reset successfully.</div></blockquote>
+</div>
+<div class="section" id="button-pressed-actions-and-events">
+<h2>Button pressed actions and events<a class="headerlink" href="#button-pressed-actions-and-events" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Short 1 time pressed</td>
+<td><dl class="first last docutils">
+<dt>Add device to z-wave network</dt>
+<dd>Remove device from z-wave network</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>Press and hold 3 seconds</td>
+<td>Send Wake Up Notification (when it is in battery power)</td>
+</tr>
+<tr class="row-odd"><td>Press and hold 20 seconds</td>
+<td>Reset device to factory setting</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="configuration-description">
+<h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Wakeup mode</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting enable/disable waking up mode for every 10 minutes when re-power the sensor in battery mode</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>0: disable</li>
+<li>others: enable</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 0</p>
+</li>
+<li><p class="first">Parameter 2, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Auto clear motion interval</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting adjusts time to send to associated devices to clear motion trigger.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last">
+<li><p class="first">10 ~ 255: interval time in seconds</p>
+</li>
+<li><dl class="first docutils">
+<dt>256 ~ 3600: interval time in units</dt>
+<dd><ul class="first last simple">
+<li>unit = setting time/60 if no remainder</li>
+<li>unit = setting time/60 if remainder</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 240</p>
+</li>
+<li><p class="first">Parameter 3, 2 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Motion selection</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Enable/Disable the function of motion sensor</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>0: disable</li>
+<li>1: enable</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 1</p>
+</li>
+<li><p class="first">Parameter 4, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Trigger target for motion sensor</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Select target which device sends trigger to when detecting motion</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>1: trigger to associated device</li>
+<li>2: trigger to controller</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 1</p>
+</li>
+<li><p class="first">Parameter 5, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Low battery definition</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting defines low battery level</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>10 ~ 50: value in percentage</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 0</p>
+</li>
+<li><p class="first">Parameter 40, 1 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Auto report selection</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting enable/disable auto report when measurement reach the threshold of temperature, huminity, luminance and battery level.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>0: Disable</li>
+<li>1: Enable</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 0</p>
+</li>
+<li><p class="first">Parameter 40, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Temperature change</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Threshold change in temperature to induce an automatic report.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: 0 ~ 32767 unit</dt>
+<dd><ul class="first last simple">
+<li>When unit is Celcius setting value = unit</li>
+<li>When unit is Farenheit setting value*1.8 = unit</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 1</p>
+</li>
+<li><p class="first">Parameter 41, 2 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Huminity change</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Threshold change in humidity to induce an automatic report.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: 0 ~ 32767</dt>
+<dd><ul class="first last simple">
+<li>Unit is percentage</li>
+<li>Value 10 means that if the current huminity gap more than 10%, report is sent</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 5</p>
+</li>
+<li><p class="first">Parameter 42, 2 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Luminance change</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Threshold change in Luminance to induce an automatic report.</dt>
+<dd><ul class="first last simple">
+<li>Available: 0 ~ 32767 LUX</li>
+<li>Default: 100</li>
+<li>Parameter 43, 2 bytes size</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Battery change</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Threshold change in battery to induce an automatic report.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: 0 ~ 32767</dt>
+<dd><ul class="first last simple">
+<li>Unit is percentage</li>
+<li>Value 10 means that if the current battery gap more than 10%, report is sent</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 5</p>
+</li>
+<li><p class="first">Parameter 44, 2 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Temperature threshold</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting determines if this sensor sends report when low temperature or not. Less than -15 oC is low temperature.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>0: Disable</li>
+<li>1: Enable</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 0</p>
+</li>
+<li><p class="first">Parameter 46, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Report type selection</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting defines type of information reports send to controller.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>None of report will be sent to controller</li>
+<li>Luminance</li>
+<li>Huminity</li>
+<li>Temperature</li>
+<li>Battery</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: all types are selected</p>
+</li>
+<li><p class="first">Parameter 101, 4 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Auto report interval</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting defines interval time to auto send report to controller.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: 5 ~ 2678400 units</dt>
+<dd><ul class="first last simple">
+<li>When USB power, unit is seconds</li>
+<li>When battery, min is 60 minutes. When setting value is in 5 &#8211;&gt; 3600, 60 minutes; 3601 &#8211;&gt; 7200, 120 minutes; and more...</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 3600 (60 min)</p>
+</li>
+<li><p class="first">Parameter 111, 4 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, VEriK.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'index',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../jquery.js"></script>
+      <script type="text/javascript" src="../../underscore.js"></script>
+      <script type="text/javascript" src="../../doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

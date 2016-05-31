@@ -1,0 +1,58 @@
+GE Dimmer Switch
+--------------------------------
+
+	.. image:: ../../images/switch_dimmer/ge_dimmer_switch.jpg
+	.. :align: left
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	To add device to VENUS, below actions are required:
+	
+	- Press "Add button" (button '+') in app
+	- Reset device: 
+		
+		*Power-on, led will blink slowly*
+		
+		*Press PUSH panel once*
+		
+		*--> If device is added successfully, led will stop blinking*
+		
+	- Wait for VENUS scan, detect this device and add it to VENUS
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	#. LED indicator
+		
+		LED will show its status follow or revert with device.
+			+ Available:
+				- LED status is invert with device status
+				- LED status is same as with device status
+				- LED is on all time
+			+ Default: LED is revert with device status
+			+ Parameter 3, i byte size
+			
+	#. Invert switch 
+	
+		This setting determines which switch tab is ON/OFF switch
+			+ Available: 
+				- Normal switch, Top - ON, Bottom - OFF
+				- Invert switch
+			+ Default: Normal switch
+			+ Parameter 4, 1 byte size
+		
+	#. Invert switch 
+	
+		This setting determines which switch tab is ON/OFF switch
+			+ Available: 
+				- Normal switch
+				- Invert switch
+			+ Default: Normal switch
+			+ Parameter 4, 1 byte size
+		
+	#. Dim rate adjustments
+	
+	
+	
+	

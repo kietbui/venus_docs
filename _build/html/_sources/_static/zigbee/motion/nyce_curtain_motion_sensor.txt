@@ -1,0 +1,39 @@
+NYCE NCZ-HA Zigbee Curtain Motion Sensor
+-----------------------------------------
+
+	.. image:: ../../images/motion/nyce_curtain_motion.jpg
+	.. :align: left
+
+Brief information
+~~~~~~~~~~~~~~~~~~~~
+	NYCE’s wireless Curtain Motion Sensor combines the features of a wall-mounted Motion Sensor and a ZigBee (802.15.4) radio into a single device. Packed with intelligent HVAC features, the Curtain Motion Sensor expands your network’s possibilities – monitoring the environment and reporting on motion anywhere within the home - and all without any wires. 
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Pull out plastic pull-tab. In case inclusion mode of this device time-out, press button 4 times
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset before adding**
+		- Press "Add button" (button '+') in app
+		- Press button 6 ~ 10 times, device is reset and auto join to detected network
+		- Wait for VENUS scan & detect this device and inform in app
+
+	.. image:: ../../images/motion/nyce_curtain_motion_i.png
+	.. :align: left
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	#. Clear motion interval
+	
+		Period of time to clear motion status.
+		
+		=========================== =============================================================================================
+		 Available setting           4 ~ 65535 (in seconds)
+		 Default setting             10
+		=========================== =============================================================================================
+	
+	

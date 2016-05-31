@@ -1,0 +1,110 @@
+.. _switch_dimmer_devices:
+
+Switch & Dimmer devices
+----------------------------
+.. toctree:: switch_dimmer/ge_dimmer_switch.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/ge_lighting_control_outdoor.txt
+	:maxdepth: 2
+	
+.. toctree:: switch_dimmer/ge_lighting_control_duplex.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/aeon_energy_plugin_dimmer.txt
+	:maxdepth: 2
+	
+.. toctree:: switch_dimmer/leviton_smart_dimmer.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/gocontrol_wall_mount_dimmer.txt
+   :maxdepth: 2
+
+.. toctree:: switch_dimmer/aeotec_smart_switch_6.txt
+   :maxdepth: 2
+   
+.. toctree:: switch_dimmer/ge_lamp_module_with_dimmer.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/everspring_an145_screw_in_lamp.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/enerwave_incandescent_dimmable.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/enerwave_zwn333_incandescent.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/evolve_ldm15_plugin_dimmer.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/intermatic_ha02c_heavyduty_module.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/gocontrol_isolate_contact_module.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/gocontrol_smart_switch_cover.txt
+	:maxdepth: 2
+   
+.. toctree:: switch_dimmer/gocontrol_smart_switch_cover.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/enerwave_sc7_7button_switch.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/enerwave_smart_single_relay_switch.txt
+	:maxdepth: 2
+	
+.. toctree:: switch_dimmer/evolve_guest_control_lsm15_switch.txt
+	:maxdepth: 2
+	
+.. toctree:: switch_dimmer/ge_12729_smart_dimmer_switch.txt
+	:maxdepth: 2
+	
+.. toctree:: switch_dimmer/intermatic_ha06c_indoor_wall_switch.txt
+	:maxdepth: 2
+	
+.. toctree:: switch_dimmer/intermatic_ha03c_indoor_lamp_module.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/intermatic_ha05c_screw_in_module.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/intermatic_ca600_intouch_dimmable_switch.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/leviton_plugin_lamp_module.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/schlage_plugin_dimmer_module.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/remotec_dry_contact_fixture.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/remotec_zds_plugin_dimmer.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/aeon_dsc06106_energy_switch.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/aeon_dsc26103_inwall_micro_controller.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/lutron_maestro_dimmer_with_motion.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/monoprice_inwall_on_off_module.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/monoprice_dimmer_module.txt
+	:maxdepth: 2
+
+.. toctree:: switch_dimmer/monoprice_curtain_relay_module.txt
+	:maxdepth: 2
+
+
+
+
+

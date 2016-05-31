@@ -1,0 +1,142 @@
+FIBARO flood sensor
+-------------------------------
+
+	.. image:: ../../images/water_flood/fibaro_flood_sensor.jpg
+	.. :align: left
+	
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~~~
+	- The Ultimate Z-wave water leak sensor/detector, with temperature and tilt sensor
+	- Get alerted immediately on your smart phone, tablet, our email when there is a leak. Trigger certain lights, activate specific scenes or even sirens to activate if there is a threat
+	- Three 24K plated gold telescoping feat always make sure its making contact even on uneven surfaces and never corodes. Built for longevity.
+	- Built in temperature sensor alerts through your smart hub's app and visually/ audibly at sensor if there is a suddon rise or fall in temperature
+	- Z-Wave Certifed Sensor: Certification ID ZC08-14070006 / Frequency Region: U.S./Canada/Mexico, Z-Wave Library Version: 4.55.00
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Turn the cover counter-clockwise and open it
+		- Remove the battery blocker
+		- Flood Sensor will confirm being powered with a short beep
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Adding/Removing**
+		- Press "Add button" (button '+') in app
+		- Turn the cover counter-clockwise and open it
+		- 3 times quick press TMP button (Z-Wave button)
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/water_flood/fibaro_flood_sensor_i.png
+	.. :align: left
+
+How to add/remove associated device(s) to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	This device supports 1 association group with 5 nodes.
+	
+	**To add associated device(s) to this device, below action is required:**
+	
+	- Add z-wave notified-devices (which will be associated to this sensor) to VENUS
+	- Select Associate button and then select notified-device(s) to add
+	- Wake-up this sensor: 3 times quick press TMP button (Z-Wave button)
+	- If successful, pop-up notification displays in VENUS app
+	
+	**To remove associated device(s) from this sensor, below action is required:**
+	
+	- Select Associate button and then select notified-device(s) to remove
+	- Wake-up this sensor: 3 times quick press TMP button (Z-Wave button)
+	- If successful, pop-up notification displays in VENUS app
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#. Alarm cancellation delay
+	
+		Determines time period, in seconds, by which a Flood Sensor will re-tain the flood state after the flooding itself, has ceased.
+		
+		=========================== ================================================
+		 Available setting           0 - 3600 (in seconds)
+		 Default setting             0
+		=========================== ================================================
+	
+	#. Acoustic and visual signals On / Off in case of flooding
+	
+		Select alarm type with below values:
+		
+		=========================== ================================================================================================
+		 Available setting           0 - no alarm active
+		 
+		                             1 - visual alarm active
+		                             
+		                             2 - acoustic alarm active
+		                             
+		                             3 - both acoustic and visual alarms active
+		 Default setting             3
+		=========================== ================================================================================================
+	
+	#. Basic set level for associated devices
+	
+		=========================== ================================================================================================
+		 Available setting           1 - 99: Dim level (for multi-level switch devices)
+		 
+		                             255: ON trigger (for binary switch devices)
+		 Default setting             255
+		=========================== ================================================================================================
+	
+	#. Alarm cancellation
+	
+		This setting allows associated devices receive OFF trigger of alarm cancellation.
+		
+		=========================== ================================================================================================
+		 Available setting           0 - Inactive alarm cancellation
+		 
+		                             1 - Active alarm cancellation
+		 Default setting             1
+		=========================== ================================================================================================
+	
+	#. Temperature measurement interval
+	
+		Set interval time for device to auto measure temperature.
+		
+		=========================== ================================================================================================
+		 Available setting           1 - 65535 (in seconds)
+		 Default setting             300 (5min)
+		=========================== ================================================================================================
+	
+	#. Low temperature threshold
+	
+		=========================== ================================================================================================
+		 Available setting           -10000 - 10000 (each 0.01 celcius)
+		 Default setting             15000 (15 celcius)
+		=========================== ================================================================================================
+		
+	#. High temperature threshold
+	
+		=========================== ================================================================================================
+		 Available setting           -10000 - 10000 (each 0.01 celcius)
+		 Default setting             35000 (35 celcius)
+		=========================== ================================================================================================
+	
+	#. Visual and audible alarms duration
+	
+		By default, when water/flood detecting, device will trigger alarm continuously until no water/flood detected.
+		
+		User can adjust alarm time to save battery by below setting:
+		
+		=========================== ================================================================================================
+		 Available setting           0 - alarms active indefinitely
+		 
+		                             1-65535 - time in seconds
+		 Default setting             0
+		=========================== ================================================================================================
+	
+Factory reset
+~~~~~~~~~~~~~~~~~~~~~~
+	**Resetting the Flood Sensor: Reset procedure deletes EEPROM’s memory, including all information on the Z-Wave network and the main controller.**
+	
+	#. Make sure the Sensor is powered
+	#. Press and hold the TMP button
+	#. Wait 15-20 second for visual LED indicator to glow yellow (4th position the MENU)
+	#. Release the TMP button
+	#. Click the TMP button, once
+	#. After few seconds the device will be restarted, which is signalled with the red visual indicator colour and acoustic signal

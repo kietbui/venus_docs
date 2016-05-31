@@ -1,0 +1,67 @@
+Schlage Home Door Window Sensor
+--------------------------------
+
+	.. image:: ../../images/door_window/schlage_door_window.jpg
+	.. :align: left
+
+Brief information
+~~~~~~~~~~~~~~~~~~~~~
+	- For indoor use only
+	- Operating frequency: 908.42 MHz
+	- Operation range: Up to 100 feet (30.5 meters) line-of-sight
+	- Operating temperature: 0° – 49°C, 32° – 120°F (ambient temperature)
+	- Battery type required: 3V Lithium CR123A
+	- Battery life approximately 3 years
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Remove the plastic pull-tab from the back of device
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Remove battery for at least 10 seconds, re-install battery
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/door_window/ecolink_door_window_i.jpg
+	.. :align: left
+	
+LED indicator
+~~~~~~~~~~~~~~~~~~~
+	- Continuously blinking: device is not in any z-wave network
+	- Solid light: device is in a z-wave network or tamper
+	- Single blink: Open/Close detected
+	
+How to add/remove associated device(s) to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	**To add associated device(s) to this sensor, below action is required:**
+	
+	- Add z-wave notified-devices (which will be associated to this sensor) to VENUS
+	- Select Associate button and then select notified-device(s) to add
+	- Wake-up this sensor: remove battery and then re-install
+	- If successful, pop-up notification displays in VENUS app
+	
+	**To remove associated device(s) from this sensor, below action is required:**
+	
+	- Select Associate button and then select notified-device(s) to remove
+	- Wake-up this sensor: remove battery and then re-install
+	- If successful, pop-up notification displays in VENUS app
+	
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#. Signal trigger device (Trigger to associated devices)
+
+		==================== =====================================================================================================================
+		 Available setting    ON - When the door/window OPENNED, the associated devices are triggered as ON.
+		 
+		                            And when the door/window is CLOSED, the associated devices are triggered as OFF.
+		 
+		                      OFF - When the door/window OPENED, the associated devices are triggered as OFF. 
+		    
+		                            And when the door/window is CLOSED, the associated devices are triggered as ON.
+		 Default              ON
+		==================== =====================================================================================================================

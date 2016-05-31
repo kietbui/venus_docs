@@ -1,0 +1,29 @@
+Smartthings SmartPower Outlet
+--------------------------------
+
+	.. image:: ../../images/switch_dimmer/smartthing_smartpower_outlet.png
+	.. :align: left
+
+Brief information
+~~~~~~~~~~~~~~~~~~~~
+	The SmartPower Outlet lets you remotely control lights, electronics, and small appliances. Set your coffee maker to on in the morning or automate your lights to turn on when the sun sets. You can also restrict the power used by fans, lights, and other plug-in appliances.
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**Newly add device to Zigbee network**
+		- Press "Add button" (button '+') in app
+		- Plugin device to power outlet
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**Reset and reconnect**
+		- Press "Add button" (button '+') in app
+		- Press and hold the device’s Connect button while plugging to power outlet.
+		- Once the LED is ON, release the button. 
+		- Wait for VENUS scan & detect this device and inform in app
+
+	.. image:: ../../images/switch_dimmer/smartthing_smartpower_outlet_d.png
+	.. :align: left
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration for this device.

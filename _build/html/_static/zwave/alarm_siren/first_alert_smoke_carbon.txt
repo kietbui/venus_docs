@@ -1,0 +1,27 @@
+First Alert Smoke and Carbon Monoxide
+-------------------------------------
+
+	.. image:: ../../images/alarm_siren/first_alert_smoke.jpg
+	.. :align: left
+	
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**To add device to VENUS, below actions are required:**
+
+	- Press "Add button" (button '+') in app
+	- Reset device: 
+		
+			*+ Remove battery tray*
+			
+			*+ Press and hold TEST/SILIENCE button and re-install battery tray until 2-beep appears*
+			
+	- Wait for VENUS scan & detect this device and inform in app
+	
+	.. image:: ../../images/alarm_siren/first_alert_smoke_i.jpg
+	.. :align: left
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	T.B.D

@@ -1,0 +1,48 @@
+GoControl Bulbz Z-Wave Dimmable BR30 LED Indoor Flood Light
+--------------------------------------------------------------
+
+	.. image:: ../../images/light_bulb/gocontrol_br30_indoor_flood.jpg
+	.. :align: left
+
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Uses 7.5w Of Energy But Provides 650 Lumens as Much Light As A Traditional 65w Incandescent Flood Light Bulb
+	- Medium-cool 5,000k Light Appearance
+	- Perfect For Recessed Can & Track-light Fixtures That Use Flood Lights Such As Kitchens, Bathrooms, Living Rooms & More
+	- Includes Wall Light Switch Clip That Keeps The Light Switch On To Ensure The Z-wave Circuitry Inside The Flood Light Bulb Is Always Active
+	- Dim: 5.38"h X 3.75" Dia
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	#. Newly add to VENUS network
+
+	- Press "Add button" (button '+') in app
+	- Turn the power to the bulb ON.
+	- Wait for VENUS scan & detect this device and inform in app
+	
+	#. Reset device to add to new target VENUS network
+
+	- Press "Add button" (button '+') in app
+	- Turn the power to the bulb ON then OFF four times **within four seconds**.
+			The Smart LED Light Bulb will fl ash twice when the reset occurs.
+	- Wait for VENUS scan & detect this device and inform in app
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#. Dim level memory
+		
+		0: Bulb will be full brightness when turned on (default)
+		
+		1: Bulb will turn on to the last dim level setting
+	
+	
+	#. Dim / Bright Step Level
+	
+		Default is 1
+		1 - 99: Dim value
+		
+	#. Dim / Bright Speed
+	
+		Default is 3
+		1 - 10: Bright speed. Low is faster than high
+

@@ -1,0 +1,41 @@
+Leviton DZPD3-1LW Decora Z-Wave Controls 300-Watt LED/CFL Compatible Plug-In Dimming Lamp Module, White
+--------------------------------------------------------------------------------------------------------------------------
+
+	.. image:: ../../images/switch_dimmer/leviton_compatible_plugn_dimmer_lamp_module.jpg
+	.. :align: left
+	
+
+Brief information 
+~~~~~~~~~~~~~~~~~~~~~~~
+	- Compatible with Wink, SmartThings and Amazon Echo (requires Wink or SmartThings Hub)
+	- 100W Dimmable LED/CFL, 300W Incandescent, Halogen
+	- Scene capable
+	- Transient surge suppression built-in
+	- Compatible with Z-Wave Network Wide Inclusion, Beaming and Security
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Plugin device to power socket
+		- Press the Programming button on the face of the module
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Press the Programming button on the face of the module (to reset)
+		- Press the Programming button on the face of the module one more time (to add)
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/switch_dimmer/leviton_plugin_lamp_module_d.png
+	.. :align: left
+		
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration in this device.
+		
+Factory reset
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	To factory reset device, unplug the module and wait for 5 seconds. Plugin it back and within 20 seconds press and hold the programming button until the LED turns amber and then turn to red. The module is now reset.
+		

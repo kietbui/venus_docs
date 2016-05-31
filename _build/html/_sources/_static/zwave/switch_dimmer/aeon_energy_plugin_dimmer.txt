@@ -1,0 +1,29 @@
+Aeon Labs Smart Energy Plug-In Dimmer
+---------------------------------------
+
+	.. image:: ../../images/switch_dimmer/aeon_energy_plugin_dimmer.png
+	.. :align: left
+
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	To add device to VENUS, below actions are required:
+	
+	- Press "Add button" (button '+') in app
+	- Reset device: 
+		
+		*Power-on, led will blink slowly*
+		
+		*Press Z-WAVE button*
+		
+		*--> If device is added successfully, led will stop blinking*
+		
+	- Wait for VENUS scan & detect this device and add it to VENUS
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Signal Trigger Controller**
+	
+	- Disable: Not send notification to controller when turning ON/OFF
+	- Enable (Default): Send notification to controller when turning ON/OFF
+	

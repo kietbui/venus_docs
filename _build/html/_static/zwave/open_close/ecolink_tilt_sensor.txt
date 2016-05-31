@@ -1,0 +1,58 @@
+Ecolink Tilt Sensor
+--------------------------------
+
+	.. image:: ../../images/door_window/ecolink_tilt_sensor.jpg
+	.. :align: left
+
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~
+	- Monitors open/closed status of garage door
+	- Triggers alert when tilted
+	- Integrates into a Z-Wave network
+	- Wireless range up to 100 feet
+	- Mounting hardware included
+
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Remove the plastic pull-tab from the back of device
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Remove battery for at least 5 seconds, re-install battery to reset
+		- Remove battery and insert again to add
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	.. image:: ../../images/door_window/ecolink_tilt_sensor_i.png
+	.. :align: left
+	
+How to add/remove associated device(s) to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	**To add associated device(s) to this sensor, below action is required:**
+	
+	- Add z-wave notified-devices (which will be associated to this sensor) to VENUS
+	- Select Associate button and then select notified-device(s) to add
+	- Wake-up this sensor: remove battery and then re-install
+	- If successful, pop-up notification displays in VENUS app
+	
+	**To remove associated device(s) from this sensor, below action is required:**
+	
+	- Select Associate button and then select notified-device(s) to remove
+	- Wake-up this sensor: remove battery and then re-install
+	- If successful, pop-up notification displays in VENUS app
+	
+	
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	#. Trigger OFF to associated device
+	
+		Enable this feature device will trigger OFF signal to associated device when door is closed.
+			+ Available: 
+				- Enable
+				- Disable
+			+ Default: Enable
+			+ Parameter 99, 1 byte size

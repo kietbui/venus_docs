@@ -1,0 +1,40 @@
+Intermatic HA05C Home Settings Screw In Module
+--------------------------------------------------------------------------------------------------------------------------
+
+	.. image:: ../../images/switch_dimmer/intermatic_ha05c_screw_in_module.jpg
+	.. :align: left
+	
+
+Brief information 
+~~~~~~~~~~~~~~~~~~~~~~~
+	- For incandescent, CFL, and PAR lamps
+	- Fits most outdoor fixtures
+	- On/off functions
+	- Temperature operating range: -35 degrees Celsius to 60 degrees Celsius
+	- 300-watts Tungsten, 42-watts compact fluorescent
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Powerup device
+		- Press and release Program button
+		- LED will stop flash
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Press and release Program button (to reset)
+		- LED will flash continuously
+		- Press and release Program button once more (to add)
+		- LED will stop flash
+		- Wait for VENUS scan & detect this device and inform in app
+		
+	.. image:: ../../images/switch_dimmer/intermatic_ha05c_screw_in_d.png
+	.. :align: left
+		
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration in this device.
+		
