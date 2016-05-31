@@ -52,10 +52,12 @@ How to add/remove associated device(s) to
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	**1. Signal trigger device (Trigger to associated devices)**
+	#. Trigger OFF to associated device
 	
-	- ON (default): When detecting motion, the associated devices are triggered as ON. 
-			And when motion ends, the associated devices are triggered as OFF.
-	- OFF: When detecting motion, the associated devices are triggered as ON. 
-			And when motion ends, no trigger to associated device.
+		Enable this feature device will trigger OFF signal to associated device when door is closed.
+			+ Available: 
+				- Enable
+				- Disable
+			+ Default: Enable
+			+ Parameter 99, 1 byte size
 	

@@ -22,8 +22,37 @@ How to add to VENUS app
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	**1. LED indicator**
 	
-	- Checked: LED is ON when device is turned-off
-	- Un-checked (Default): LED is ON when device is turned-on
+	#. LED indicator
+		
+		LED will show its status follow or revert with device.
+			+ Available:
+				- LED status is invert with device status
+				- LED status is same as with device status
+				- LED is on all time
+			+ Default: LED is revert with device status
+			+ Parameter 3, i byte size
+			
+	#. Invert switch 
+	
+		This setting determines which switch tab is ON/OFF switch
+			+ Available: 
+				- Normal switch, Top - ON, Bottom - OFF
+				- Invert switch
+			+ Default: Normal switch
+			+ Parameter 4, 1 byte size
+		
+	#. Invert switch 
+	
+		This setting determines which switch tab is ON/OFF switch
+			+ Available: 
+				- Normal switch
+				- Invert switch
+			+ Default: Normal switch
+			+ Parameter 4, 1 byte size
+		
+	#. Dim rate adjustments
+	
+	
+	
 	

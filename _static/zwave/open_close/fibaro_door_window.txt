@@ -41,67 +41,95 @@ How to add/remove associated device(s) to
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	#. Signal trigger device (Trigger to associated devices)
-
-		=========================== ==================================================================================================
-		 Available                   1 - 99: Dim value (Multi-level devices)
-		                             255: ON (Binary devices)
-		 Default                     255
-		=========================== ==================================================================================================
-
--------------------------------------------------------------------------------------------------------------------------------------
-
-Technical specification
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-	#. Configuration SET command format
-		
-		B: byte, b: bit, command_class: COMMAND_CLASS_CONFIGURATION, command: CONFIGURATION_SET
-		
-		=============== ========= ================== =================================== ============== ============== ===== ==============
-		 command class   command   parameter number   default(1) - reserve(4) - size(3)   config val 1   config val 2   ...   config val n
-		=============== ========= ================== =================================== ============== ============== ===== ==============
-		
-		- Parameter 1 - 2 bytes: alarm cancellation delay
-			+ Available setting value: 0 ~ 65535 seconds
+	#. Alarm cancellation delay
+	
+		A period of time to cancel alarm from the last change status in device.
+			+ Available: 0 ~ 65535 in seconds
 			+ Default: 0
-		
-		- Parameter 2 - 1 byte: device status change signalled by LED
-			+ 0x00: Not apply
-			+ 0x01: LED indicates device status change (Default)
+			+ Parameter 1, 2 bytes size
 			
-		- Parameter 3 - 1 byte: Type of IN input
-			+ 0x00: INPUT_NC (Normal close) (Default)
-			+ 0x01: INPUT_NO (Normal open)
-			+ 0x02: INPUT_MONOSTABLE
-			+ 0x03: INPUT_BISTABLE
+	#. Device's status change signalled by LED
+	
+		This setting enables/disables LED notification for each change in device.
+			+ Available: 
+				- Enable 
+				- Disable
+			+ Default: Enable
+			+ Parameter 2, 1 byte size
+	
+	#. IN input type
+		
+		Select type of IN input
+			+ Available: 
+				- INPUT_NC: Normal close 
+				- INPUT_NO: Normal open
+				- INPUT_MONOSTABLE 
+				- INPUT_BISTABLE 
+			+ Default: INPUT_NC
+			+ Parameter 3, 1 byte size
+	
+	#. Association control frame
+		
+		Type of control frame transmitted for association group 1, activated via IN input. The parameter allows you to specify the type of an alarm frame or to force control frames transmission (BASIC_SET)
+			+ Available: 
+				- ALARM GENERIC frame
+				- ALARM SMOKE frame
+				- ALARM CO frame
+				- ALARM CO2 frame
+				- ALARM HEAT frame
+				- ALARM WATER frame
+				- Control frame BASIC_SET
+			+ Default: Control frame BASIC_SET
+			+ Parameter 5, 1 byte size
+	
+	#. Association control frame
+		
+		Value of the parameter specifying the forced level of dimming/ope-ning roller blinds when “switch on”/”open” commands are sent to devices from association group no.1.
+			+ Available: 
+				- 0 ~ 99: Dim value
+				- Turn on associated device with last memorized dim value
+			+ Default: Turn on associated device with last memorized dim value
+			+ Parameter 7, 1 byte size
+	
+	#. Association control frame
+		
+		Deactivating transmission of the alarm cancelling frame or the control frame deactivating the device (Basic). It allows for disabling the function of deactivating the device and cancelling alarms for devices associated with IN input.
+			+ Available: 
+				- 0 ~ 99: Dim value
+				- Turn on associated device with last memorized dim value
+			+ Default: Turn on associated device with last memorized dim value
+			+ Parameter 7, 1 byte size
+	
+	#. Alarm cancel transmission
+		
+		Deactivating transmission of the alarm cancelling frame or the control frame deactivating the device (Basic). It allows for disabling the function of deactivating the device and cancelling alarms for devices associated with IN input.
+			+ Available: 
+				- Send cancelling information
+				- Not send cancelling information
+			+ Default: Send cancelling information
+			+ Parameter 9, 1 byte size
+	
+	#. Temperature change report
+	
+		Deactivating transmission of the alarm cancelling frame or the control frame deactivating the device (Basic). It allows for disabling the function of deactivating the device and cancelling alarms for devices associated with IN input.
+			+ Available: 0 ~ 255 units
+				- 16 unit = 1 celcius
+				- 0 ~ 255 is appropriated with 0 ~ 16 oC and 32 ~ 60.8 oF
+			+ Default: 8 (0,5 oC)
+			+ Parameter 12, 1 byte size
+				
+	#. Broadcast alarm control frame
+	
+		Sending an alarm or control frame (for IN input, depending on parameter no.5 value), and TMP button alarm frame. The frame is sent in “broadcast” mode, i.e. to all devices within range - information sent in this mode is not repeated by the mesh network
 
-		- Parameter 5 - 1 byte: Type of control frame transmitted for association group 1, activated via IN input. The parameter allows you to specify the type of an alarm frame or to force control frames transmission (BASIC_SET)
-			+ 0 – ALARM GENERIC frame
-			+ 1 – ALARM SMOKE frame
-			+ 2 – ALARM CO frame
-			+ 3 – ALARM CO2 frame
-			+ 4 – ALARM HEAT frame
-			+ 5 – ALARM WATER frame
-			+ 255 – Control frame BASIC_SET (Default)
-			
-		- Parameter 7 - 1 byte: Value of the parameter specifying the forced level of dimming/ope-ning roller blinds when “switch on”/”open” commands are sent to devices from association group no.1.
-			+ Available setting value: 0 ~ 99 and 255
-			+ Default: 255
-			
-		- Parameter 9 - 1 byte: Deactivating transmission of the alarm cancelling frame or the control frame deactivating the device (Basic). It allows for disabling the function of deactivating the device and cancelling alarms for devices associated with IN input.
-			+ 0x00: for association group no. 1 information is sent (default)
-			+ 0x01: for association group no. 1 information is not sent.
-			
-		- Parameter 12 - 1 byte: Sensitivity to temperature changes. The gap of temperature between 2 detected times. If the difference is more than setting value, alarm report will be sent.
-			+ Available setting value: 0 ~ 255 (0 ~ 16 celcius, 32 ~ 60,8 Fahrenheit)
-			+ Default: 8 (0,5 celcius)
-			+ If the wake-up interval is set to 255 seconds, temperature report will be sent according to the interval
-			+ if the wake-up interval is set to over 255, temperature report will be sent each ca. 4 minutes
-		
-		- Parameter 13 - 1 byte: Sending an alarm or control frame (for IN input, depending on parameter no.5 value), and TMP button alarm frame. The frame is sent in “broadcast” mode, i.e. to all devices within range - information sent in this mode is not repeated by the mesh network
-			+ 0: IN and TMP Broadcast mode inactive (Default)
-			+ 1: IN broadcast mode active, TMP broadcast mode inactive
-			+ 2: IN broadcast mode inactive, TMP broadcast mode active
-			+ 3: IN and TMP broadcast mode active
+		#. Broadcast alarm control frame
+	
+		Sending an alarm or control frame (for IN input, depending on parameter no.5 value), and TMP button alarm frame. The frame is sent in “broadcast” mode, i.e. to all devices within range - information sent in this mode is not repeated by the mesh network
+			+ Available: 
+				- IN and TMP Broadcast mode inactive
+				- IN broadcast mode active, TMP broadcast mode inactive
+				- IN broadcast mode inactive, TMP broadcast mode active
+				- IN and TMP broadcast mode active
+			+ Default: IN and TMP Broadcast mode inactive
+			+ Parameter 13, 1 byte size
 		

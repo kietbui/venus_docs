@@ -4,6 +4,24 @@ AEOTEC smart switch 6
 	.. image:: ../../images/switch_dimmer/aeotec_smart_switch_6.jpg
 	.. :align: left
 
+Brief information
+~~~~~~~~~~~~~~~~~~~~~
+	- Model number: ZW096.
+	- Max standby power: 0.5W.
+	- USB output: DC 5V±5%, 1000mA.
+	- Operating temperature: -10 C to 45 C .
+	- Relative humidity: 8% to 80%.
+	- Operating distance: Up to 100 feet/30 metres indoors or
+	- 300 feet/100 metres outdoors.
+	- AC input:
+		+ AU - 230V 50Hz, Max: 10A - 921.42MHz
+		+ BR - 220V 60Hz, Max: 10A - 921.42MHz
+		+ CN - 220V 50Hz, Max: 10A - 868.42MHz
+		+ EU - 230V 50Hz, Max: 13A - 868.42MHz
+		+ IL - 230V 50Hz, Max: 10A - 868.42MHz
+		+ IN - 230V 50Hz, Max: 6A - 865.22MHz
+		+ UK - 230V 50Hz, Max: 13A - 868.42MHz
+		+ US - 120V 60Hz, Max: 15A - 908.42MHz
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -18,5 +36,16 @@ How to add to VENUS app
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	TBD
+	
+	#. Change LED mode
+	
+		This setting allows user confirm operating mode in device via LED
+			+ Available:
+				- Energy mode: when the switch is on, the LED will be on, and while the switch is off, the LED will remain off.
+				- Momentary indicate mode: turn the LED on for 5 seconds then turn off after every state change in the switch
+				- Night light mode: turn on/off LED follow configured time
+			+ Default: Energy mode
+			+ Parameter 81, 1 byte size
+			
+	
 	

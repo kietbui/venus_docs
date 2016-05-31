@@ -50,32 +50,12 @@ How to add/remove associated device(s) to
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	**1. Signal trigger device (Trigger to associated devices)**
+	#. Trigger OFF to associated device
 	
-		==================== =====================================================================================================================
-		 Available setting    ON - When the door/window OPENNED, the associated devices are triggered as ON.
-		 
-		                            And when the door/window is CLOSED, the associated devices are triggered as OFF.
-
-		                      OFF - When the door/window OPENED, the associated devices are triggered as OFF. 
-	   
-		                            And when the door/window is CLOSED, the associated devices are triggered as ON.
-		 Default              ON
-		==================== =====================================================================================================================
-
---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Technical specification
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-	#. Configuration SET command format
-		
-		=============== ========= ================== =================================== ============
-		 command class   command   parameter number   default(1) - reserve(4) - size(3)   config val
-		=============== ========= ================== =================================== ============
+		Enable this feature device will trigger OFF signal to associated device when door is closed.
+			+ Available: 
+				- Trigger OFF signal to associated devices
+				- No trigger OFF signal to associated devices
+			+ Default: Trigger OFF signal to associated devices
+			+ Parameter 99, 1 byte size
 	
-		- Command_class: COMMAND_CLASS_CONFIGURATION
-		- Command: CONFIGURATION_SET
-		- Parameter number: 0x63
-		- Size: 1
-		- Configuration value: 0 ~ 99 or 255

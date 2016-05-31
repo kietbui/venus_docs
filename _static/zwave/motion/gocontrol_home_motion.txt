@@ -7,11 +7,12 @@ GoControl – Premium Z-Wave Home motion sensor
 
 Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~
-	- During normal operation without detecting any motion, the detector’s red LED will be off.
-	- When the sensor detects motion, it will send a status of “ON” and alarm report (Type: 07, Level: 0xFF) to any associated nodes. The red LED will flash once. 
-	- When no movement is detected for 3 minutes (adjustable by configuration setting), the detector will send a status of “OFF” (Basic Set, Value: 0x00) and alarm restore report (Type: 07, Level: 0x00) to any associated nodes, then the unit assumes “sleep” mode.
-	- The motion detector is equipped with a tamper switch. If the cover of the detector is removed, it will send an alarm report (Type: 07, Level: 0xFF) and the red LED will light constant.
-
+	- CR123A Lithium Battery
+	- Working frequency: 908.42 MHz
+	- Operating temperature: 5°F~140°F / -15°C~ 60°C
+	- Up to 100 feet line of sight between the Z-Wave Controller and/or the closest Z-Wave Repeater
+	
+	
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
 	To add device to VENUS, below actions are required:
@@ -44,10 +45,9 @@ How to add/remove associated device(s) to
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	#. Re-trigger Wait Time
-		*Re-trigger wait-time is amount of time that device resets status from the last motion detected. Default is 3 minutes. 
-	======================== ====================================================
-	 Value                    Description
-	======================== ====================================================
-	 1 - 255                  Re-trigger wait time value
-	======================== ====================================================
 	
+		Re-trigger wait-time is amount of time that device resets status from the last motion detected. Default is 3 minutes. 
+			+ Available: 1 ~ 255 in minutes
+			+ Default: 3
+			+ Parameter 1, 2 bytes size
+
