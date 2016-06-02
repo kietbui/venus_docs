@@ -27,13 +27,4 @@ How to add to VENUS app
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
-	#. Clear motion interval
-	
-		Period of time to clear motion status.
-		
-		=========================== =============================================================================================
-		 Available setting           4 ~ 65535 (in seconds)
-		 Default setting             10
-		=========================== =============================================================================================
-	
-	
+	There is no configuration for this device.

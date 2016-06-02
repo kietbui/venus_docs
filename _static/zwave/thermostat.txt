@@ -1,11 +1,11 @@
-.. _themostat_devices:
+.. _thermostat_devices:
 
 Themostat devices
 -------------------------
-.. toctree:: themostat/honeywell_programmable.txt
+.. toctree:: thermostat/honeywell_th8320zw_themostat.txt
 	:maxdepth: 2
 
-.. toctree:: themostat/rcs_communicating.txt
+.. toctree:: thermostat/rcs_communicating.txt
 	:maxdepth: 2
 
 .. toctree:: themostat/2gig_ct100_programmable.txt
