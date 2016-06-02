@@ -1,0 +1,33 @@
+Aeon Labs Aeotec Z-Wave Range Extender/Repeater (DSD37-ZWUS)
+-------------------------------------------------------------------------------
+
+	.. image:: ../../images/other/aeotec_range_extender.jpg
+	.. :align: left
+	
+
+Basic information
+~~~~~~~~~~~~~~~~~~~~~~~
+	- Operating temperature: -20 ~ 50 oC
+	- Input: US - 120V , EU-AU-UK-IN-CN-HK-RU-MY - 220~240V
+	
+How to add to VENUS app  
+~~~~~~~~~~~~~~~~~~~~~~~
+	**1. Activation**
+		- Press "Add button" (button '+') in app
+		- Power supply and press z-wave button on device
+		- Wait for VENUS scan & detect this device and inform in app
+	
+	**2. Reset then re-add**
+		- Press "Add button" (button '+') in app
+		- Press the z-wave button once to reset
+		- Press the z-wave button once again to add
+		- Wait for VENUS scan & detect this device and inform in app
+		
+		
+	.. image:: ../../images/other/aeotec_range_extender_d.png
+	.. :align: left
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	There is no configuration for this device.

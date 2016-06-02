@@ -85,8 +85,8 @@
 <li><a class="reference internal" href="#">Heavy Duty Smart Switch Gen5</a><ul>
 <li><a class="reference internal" href="#brief-information">Brief information</a></li>
 <li><a class="reference internal" href="#how-to-add-to-venus-app">How to add to VENUS app</a></li>
-<li><a class="reference internal" href="#configuration-description">Configuration description</a></li>
 <li><a class="reference internal" href="#factory-reset">Factory reset</a></li>
+<li><a class="reference internal" href="#configuration-description">Configuration description</a></li>
 </ul>
 </li>
 </ul>
@@ -180,118 +180,6 @@
 <img alt="../../../_images/aeotec_heavy_duty_gen5_i.jpg" src="../../../_images/aeotec_heavy_duty_gen5_i.jpg" />
 </div></blockquote>
 </div>
-<div class="section" id="configuration-description">
-<h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><ol class="arabic">
-<li><dl class="first docutils">
-<dt>Enable overload protection</dt>
-<dd><p class="first">When enable this function, load will be closed when the current more than 39.5A and the time more than 5 seconds.</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td><p class="first">0: disable</p>
-<p class="last">1: enable</p>
-</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Enable notification when load changes</dt>
-<dd><p class="first">Enable to send notifications to associated devices when the state of Heavy Duty Smart Switch Gen5’s load changed.</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td><p class="first">0: disable</p>
-<p>1: hail notification</p>
-<p class="last">2: basic notification</p>
-</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Enable report for threshold change (in Watt)</dt>
-<dd><p class="first">Auto report when usage Watt in device over threshold.</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td>0 ~ 60000 (in Watt)</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Enable report for threshold change (in percentage)</dt>
-<dd><p class="first">Auto report when usage percentage in device over threshold.</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td>0 ~ 100 (in percentage)</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>10</td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-</li>
-<li><p class="first">Enable auto report when load changes</p>
-<blockquote>
-<div><table border="1" class="docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td><p class="first">0: disable</p>
-<p class="last">1: enable</p>
-</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-</div></blockquote>
-</li>
-</ol>
-</div></blockquote>
-</div>
 <div class="section" id="factory-reset">
 <h2>Factory reset<a class="headerlink" href="#factory-reset" title="Permalink to this headline">¶</a></h2>
 <blockquote>
@@ -300,6 +188,148 @@
 <li>Press and hold z-wave button for 20 seconds</li>
 </ul>
 <p><em>Note: when hold more than 1 second, LED blinks faster and faster. When holding more than 20 seconds, LED is on in 2 seconds.</em></p>
+</div></blockquote>
+</div>
+<div class="section" id="configuration-description">
+<h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Enable overload protection</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>When enable this function, load will be closed when the current more than 39.5A and the time more than 5 seconds.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Enable overload protection</li>
+<li>Disable overload protection</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Disable</p>
+</li>
+<li><p class="first">Parameter 3, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Enable notification when load changes</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Enable to send notifications to associated devices when the state of Heavy Duty Smart Switch Gen5’s load changed.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Disable notification</li>
+<li>Hail notification</li>
+<li>Basic notification</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Disable</p>
+</li>
+<li><p class="first">Parameter 80, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Enable report for threshold change (in Watt)</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Auto report when usage Watt in device over threshold.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Disable auto report</li>
+<li>1 ~ 60000 watts</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 50</p>
+</li>
+<li><p class="first">Parameter 91, 2 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Enable report for threshold change (in percentage)</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Auto report when usage percentage in device over threshold.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Disable auto report</li>
+<li>1 ~ 100 percentage</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 10</p>
+</li>
+<li><p class="first">Parameter 92, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Enable auto report when load changes</p>
+<blockquote>
+<div><ul>
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Enable auto report</li>
+<li>Disable auto report</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Enable</p>
+</li>
+<li><p class="first">Parameter 90, 1 byte size</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Enable lock configuration</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting allows device to be configured or not.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Enable configuration setting</li>
+<li>Disable configuration setting</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Enable</p>
+</li>
+<li><p class="first">Parameter 252, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
 </div></blockquote>
 </div>
 </div>

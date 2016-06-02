@@ -66,96 +66,61 @@ How to add/remove associated device(s) to
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
-	#. Signal trigger device (Trigger to associated devices)
+	#. Trigger signal to controller
 	
-		==================== =====================================================================================================================
-		 Available setting    0 - When the door/window OPENNED, the associated devices are triggered as ON.
-		 
-		                          And when the door/window is CLOSED, the associated devices are triggered as OFF.
-		
-		                      1 - When the door/window OPENED, the associated devices are triggered as OFF. 
-		    
-		                          And when the door/window is CLOSED, the associated devices are triggered as ON.
-		 Default              0
-		==================== =====================================================================================================================
+		Type of signal trigger to controller when magnet switch open/close.
+			+ Available:
+				- Trigger alarm to controller when magnet open
+				- Trigger alarm to controller when magnet close
+			+ Default: Trigger alarm to controller when magnet open
+			+ Parameter 1, 1 byte size
 
-	#. Signal trigger controller (Trigger to controller - zwave controller embedded in VENUS firmware)
+	#. Trigger signal to associated device
 	
-		==================== =====================================================================================================================
-		 Available setting    0 - When the door/window is OPENNED, the controller is triggered as OPEN. 
-		 
-		                          And when the door/window is CLOSED, the controller is triggered as CLOSE.
-		
-		                      1 - When the door/window is OPENNED, the controller is triggered as CLOSE. 
-		
-		                          And when the door/window is CLOSED, the controller is triggered as OPEN.
-		 Default              0
-		==================== =====================================================================================================================
-
-	#. Report to (Select target to receive trigger events)
-	
-		==================== =====================================================================================================================
-		 Available setting    Device & Controller
-		
-		                      Device
-		
-		                      Controller
-		
-		                      Nothing
-		
-		 Default              Device & Controller
-		==================== =====================================================================================================================
-	
-		- Device & Controller: Associated devices, controller are assigned to receive events from device.
-		
-		- Device: Only associated devices are assigned to receive events from device.
-		
-		- Controller: Only controller is assigned to receive events from device.
-
-		- Nothing: No trigger deliveried
-
--------------------------------------------------------------------------------------------------------------------------------------
-
-Technical specification
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	#. Configuration SET command format
-		
-		B: byte, b: bit, command_class: COMMAND_CLASS_CONFIGURATION, command: CONFIGURATION_SET
-		
-		=============== ========= ================== =================================== ============== ============== ===== ==============
-		 command class   command   parameter number   default(1) - reserve(4) - size(3)   config val 1   config val 2   ...   config val n
-		=============== ========= ================== =================================== ============== ============== ===== ==============
-		
-		- Parameter 1 - 1 byte: Which value of the Sensor Binary Report will be sent when the magnet switch to open/close. 
-			+ 0x00: Open=Sensor Binary Report 0xFF, Close=Sensor Binary Report 0x00.  (Default)
-			+ 0x01: Open= Sensor Binary Report 0x00, Close=Sensor Binary Report 0xFF
+		Type of signal trigger to associated devices when magnet switch open/close.
+			+ Available:
+				- Trigger ON to associated devices when magnet open
+				- Trigger ON to associated devices when magnet close
+			+ Default: Trigger ON to associated devices when magnet open
+			+ Parameter 3, 1 byte size
 			
-		- Parameter 3 - 1 byte: Which value of the Basic Set will be sent when the magnet switch to open/close.
-			+ 0x00: Open= Basic Set 0xFF, Close=Basic Set 0x00 (Default)
-			+ 0x01: Open= Basic Set 0x00, Close= Basic Set 0xFF
+	
+	#. Low battery checking
+	
+		Enable/disable the function of low battery checking, when the current voltage is less than the warning voltage, it will send the Battery Low Warning Report.
+			+ Available:
+				- Enable low battery checking
+				- Disable low battery checking
+			+ Default: Disable low battery checking
+			+ Parameter 101, 1 byte size
 			
-		- Parameter 101 - 1 byte: Enable/disable the function of low battery checking, when the current voltage is less than the warning voltage, it will send the Battery Low Warning Report
-			+ 0x00: Disable (Default)
-			+ 0x01: Enable
-			
-		- Parameter 111 - 4bytes: The Interval time of low battery checking. 
-			+ Range value: 0 ~ 0x7fffffff
-			+ Minimun unit is 4 minutes. It means when user set 1 minute, interval time is 4 minutes and when user sets 7 minutes, interval time is 8 minutes.
+	#. Low battery checking interval
+	
+		Period of time that device auto checks low battery.
+			+ Available: 0 ~ 0x7fffffff in seconds
+				- Minimun unit is 4 minutes. It means when user set 1 minute, interval time is 4 minutes and when user sets 7 minutes, interval time is 8 minutes.
+				- This setting will be activated when low battery checking is enabled (parameter 101)
+				- This device will also check current battery when it is waken-up
 			+ Default: 0x00015270
-			+ This setting will be activated when low battery checking is enable (parameter 101)
-			+ This device will also check current battery when it is waken-up
+			+ Parameter 111, 4 bytes size
 			
-		- Parameter 121 - 4 byte: To set which command will be sent to the associated nodes when the magnet switch is triggered. See the below table.
-			
-			Default: 0x00000100
-			
-			========= ========= =========================== ============================================
-			 reserve   reserve   reserve(7) - Basic set(1)   reserve(3) - Binary report(1) - reserve(4)
-			========= ========= =========================== ============================================
-		
-			+ Basic set (1b): 0 - don't send basic set; 1 - send basic set
-			+ Binary report (1b): 0 - don't send binary report; 1 - send binary report
 	
-		- Parameter 252 - 1 byte: Lock/ unlock all configuration parameters
-			+ 0x00: Unlock (default)
-			+ 0x01: Lock 
+	
+	#. Trigger report types
+	
+		Select kinds of report that device will trigger in case of events.
+			+ Available:
+				- Trigger event to controller
+				- Trigger event to associated devices
+			+ Default: all above options are selected
+			+ Parameter 121, 4 bytes size.
+
+	#. Lock configuration setting
+	
+		Lock/Unlock configuration setting.
+			+ Available:
+				- Lock
+				- Unlock
+			+ Default: Unlock
+			+ Parameter 252, 1 byte size
+

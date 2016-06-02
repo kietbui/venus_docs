@@ -4,16 +4,3 @@ Others devices
 -------------------------
 .. toctree:: others/aeotec_range_extender.txt
 	:maxdepth: 2
-
-.. toctree:: others/gocontrol_garage_remote_control.txt
-	:maxdepth: 2
-
-.. toctree:: others/evolve_wall_mount_5button_lcd.txt
-	:maxdepth: 2
-
-.. toctree:: others/remotec_zxt120_ir_extender.txt
-	:maxdepth: 2
-
-.. toctree:: others/fortrezz_mimolite_dry_bridge.txt
-	:maxdepth: 2
-	

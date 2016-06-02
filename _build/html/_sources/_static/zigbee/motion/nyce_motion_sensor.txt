@@ -24,14 +24,12 @@ How to add to VENUS app
 	.. image:: ../../images/motion/nyce_motion_i.png
 	.. :align: left
 	
+Button action and LED indication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	.. image:: ../../images/motion/nyce_motion_sensor_led.png
+	.. :align: left
+
+	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	#. Clear motion interval
-	
-		Period of time to clear motion status.
-		
-		=========================== =============================================================================================
-		 Available setting           4 ~ 65535 (in seconds)
-		 Default setting             10
-		=========================== =============================================================================================
-	
+	There is no configuration for this device.

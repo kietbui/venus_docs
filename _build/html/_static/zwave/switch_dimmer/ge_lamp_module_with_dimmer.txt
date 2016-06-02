@@ -7,13 +7,15 @@ GE Z-Wave Wireless Lighting Control Lamp Module with Dimmer Control
 
 Basic operation  
 ~~~~~~~~~~~~~~~~~~~~~~~
-	- Easily control lighting with your mobile device or computer using any Z-Wave certified gateway, or control lighting on location with the manual push-button control or a Z-Wave certified remote
-	- Dimmer control customizes lighting output and creates the perfect ambiance for any room
-	- White lighting control matches most standard wall plates
-	- Space-efficient, side-plug design does not block lower outlet or obstruct placement of furniture
-	- Features one always-on pass-through AC outlet and one Z-Wave enabled outlet
-	- Compatible with any Z-Wave certified gateway, providing remote access from many popular home automation systems and applications (application software not included)
-	- Can be controlled in groups of multiple lights or used to create dimmable ambient interior lighting scenes
+	- Power 120VAC, 60Hz
+	- Signal (Frequency) 908.42 MHz
+	- Maximum load for both outlets 15A, 1800W Resistive
+	- Maximum load for the Z-Wave controlled outlet: 2.5A 300 W
+	- Incandescent; 100W Dimmable CFL/LED
+	- Z-Wave controlled outlet is fused @ 5A. This fuse is not user serviceable.
+	- Range: Up to 100 feet line of sight between the Wireless Controller and the closest Z-Wave receiver module.
+	- Operating Temperature Range: 77° F (25° C)
+	- For indoor use only.
 	
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~

@@ -142,9 +142,13 @@
 <h2>Brief information<a class="headerlink" href="#brief-information" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li>This plug-in ON/OFF Module is a transceiver which is a Z-Wave enabled device and is fully compatible with any Z-Wave enabled devices displaying the Z-Wave logo can also be used with it regardless of the manufacturer, and ours can also be used in other manufacturer&#8217;s Z-Wave enabled networks. Remote ON/OFF control of the connected load is possible with other manufacturer&#8217;s Wireless Controller</li>
-<li>Each module is designed to act as a repeater. Repeaters will re-transmit the RF signal to ensure that the signal is received by its intended destination by routing the signal around obstacles and radio dead spots.</li>
-<li>This plug-in ON/OFF Module is able to detect current wattage (5~1440W) and overload wattage of connected non-dimmable lights and appliances. When detecting overload state, the Module will be disabled and its On/Off button will be locked out of which LED will flash quickly for 30 seconds. However, unplug and re-connect the Module will will reset its overload condition to normal status.</li>
+<li>Frequency range: 908.42 MHz</li>
+<li>Operating voltage: 120V/60Hz</li>
+<li>Maximum load: 1440W</li>
+<li>Effective range: 30 m indoor</li>
+<li>Operating temperature: 0 ~ 40 oC</li>
+<li>Operating huminity: 85%</li>
+<li>Indoor use</li>
 </ul>
 </div></blockquote>
 </div>
@@ -198,89 +202,97 @@
 <h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ol class="arabic">
+<li><p class="first">True period</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>If the setting is configured, pressing On or Off button alternately within 1 second will not send out RF command. After 1 second has elapsed, it will examine if current On/Off state is the same as the initial 1 second. If the same, no RF command will be sent, whereas if it is different, RF command will be sent to update the status. The maximum interval is 12 second (100ms*120=12000ms).</dt>
+<dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>True period</dt>
-<dd><p class="first">If the setting is configured for 1 second, pressing On or Off button alternately within 1 second will not send out RF command. After 1 second has elapsed, it will examine if current On/Off state is the same as the initial 1 second. If the same, no RF command will be sent, whereas if it is different, RF command will be sent to update the status. The maximum interval is 12 second (100ms*120=12000ms).</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td>0: disable
-1 ~ 120 units (unit = 100 mili-second)</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>10 (1 second)</td>
-</tr>
-</tbody>
-</table>
+<dt>Available: 0 ~ 120 units</dt>
+<dd><ul class="first last simple">
+<li>0: Disable</li>
+<li>1 ~ 120: unit = 100 mili-seconds</li>
+</ul>
 </dd>
 </dl>
 </li>
+<li><p class="first">Default: 10</p>
+</li>
+<li><p class="first">Parameter 1, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Enable trigger to associated devices</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>When pressing On/Off button, a notification will be sent to associated devices when this function is enabled.</dt>
+<dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>Enable trigger to associated devices</dt>
-<dd><p class="first">When pressing On/Off button, a notification will be sent to associated devices when this function is enabled.</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td>0: disable
-1: enable</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
+<dt>Available: 0 ~ 120 units</dt>
+<dd><ul class="first last simple">
+<li>Disable trigger to associated devices</li>
+<li>Enable trigger to associated devices</li>
+</ul>
 </dd>
 </dl>
 </li>
+<li><p class="first">Default: Disable</p>
+</li>
+<li><p class="first">Parameter 2, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Meter report period (report number of Watt used)</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Setting period of time that device will report the meter to controller</dt>
+<dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>Meter report period (report number of Watt used)</dt>
-<dd><p class="first">Setting period of time that device will report the meter to controller</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td>0: Disable
-1 ~ 3240 units (unit = 10 seconds)</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>3</td>
-</tr>
-</tbody>
-</table>
+<dt>Available: 0 ~ 3240 units</dt>
+<dd><ul class="first last simple">
+<li>0: Disable</li>
+<li>1 ~ 3240: unit = 10 seconds</li>
+</ul>
 </dd>
 </dl>
 </li>
-<li><dl class="first docutils">
-<dt>Meter report period (report number of kilo-Watt used)</dt>
-<dd><p class="first">Setting period of time that device will report the meter to controller</p>
-<table border="1" class="last docutils">
-<colgroup>
-<col width="12%" />
-<col width="88%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Available</td>
-<td>0: Disable
-1 ~ 10080 minutes</td>
-</tr>
-<tr class="row-even"><td>Default</td>
-<td>1440 (24 hours)</td>
-</tr>
-</tbody>
-</table>
+<li><p class="first">Default: 3</p>
+</li>
+<li><p class="first">Parameter 3, 2 bytes size</p>
+</li>
+</ul>
 </dd>
 </dl>
+</div></blockquote>
+</li>
+<li><p class="first">Meter report period (report number of kilo-Watt used)</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Setting period of time that device will report the meter to controller</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: 0 ~ 10080 minutes</dt>
+<dd><ul class="first last simple">
+<li>0: Disable</li>
+<li>1 ~ 10080: minutes</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 1440 (24 hours)</p>
+</li>
+<li><p class="first">Parameter 4, 2 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
 </li>
 </ol>
 </div></blockquote>

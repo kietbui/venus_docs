@@ -189,6 +189,100 @@
 <h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ol class="arabic">
+<li><p class="first">Dimmer blink time</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting determines period of time that device blink its LED.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: configure 2 below values.</dt>
+<dd><ul class="first last simple">
+<li>Value 1: 1 ~ 255: duration that dimmer blink, unit is seconds</li>
+<li>Value 2: 1 ~ 255: cycle ON-OFF duration, unit is 0.1 second</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Value 1: 15, value 2: 10</p>
+</li>
+<li><p class="first">Parameter 2, 2 bytes size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Overload protection</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting enables/disables overload protection in this device. Enable this feature, device will be turned off when output load is over 2.6A and time is more than 2 minutes.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Enable overload protection</li>
+<li>Disable overload protection</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Disable</p>
+</li>
+<li><p class="first">Parameter 3, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Output load status configuration</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Configure output load status after re-power on.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Restore last status</li>
+<li>Always ON</li>
+<li>Always OFF</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Restore last status</p>
+</li>
+<li><p class="first">Parameter 20, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Enable send notification to associated devices</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Enable to send notifications to associated devices (Group 1) when the state of Smart Dimmer’s load changed.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Send nothing</li>
+<li>Send hail CC</li>
+<li>Send basic CC</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Send nothing</p>
+</li>
+<li><p class="first">Parameter 80, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
 <li><p class="first">Change LED mode</p>
 <blockquote>
 <div><dl class="docutils">
@@ -197,7 +291,7 @@
 <li><dl class="first docutils">
 <dt>Available:</dt>
 <dd><ul class="first last simple">
-<li>Energy mode: when the switch is on, the LED will be on, and while the switch is off, the LED will remain off.</li>
+<li>Energy mode: LED status will follow its load on/off status</li>
 <li>Momentary indicate mode: turn the LED on for 5 seconds then turn off after every state change in the switch</li>
 <li>Night light mode: turn on/off LED follow configured time</li>
 </ul>
@@ -207,6 +301,54 @@
 <li><p class="first">Default: Energy mode</p>
 </li>
 <li><p class="first">Parameter 81, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">LED color in Night light mode</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting determines RGB LED color in Night light mode</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: select color by adjust input value in 3 below items</dt>
+<dd><ul class="first last simple">
+<li>Value 1: Green color - 0x00~0xFF</li>
+<li>Value 2: Blue color - 0x00~0xFF</li>
+<li>Value 3: Red color - 0x00~0xFF</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 0x1B-0x14-0x1B</p>
+</li>
+<li><p class="first">Parameter 83, 3 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">LED color brightness level</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting determines brightness level (in %) of LED when device is in Energy mode or Momentary mode</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available: select brightness by adjust input value in 3 below items</dt>
+<dd><ul class="first last simple">
+<li>Value 1: Green color - 1~100</li>
+<li>Value 2: Yellow color - 1~100</li>
+<li>Value 3: Red color - 1~100</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: 50-50-50</p>
+</li>
+<li><p class="first">Parameter 84, 3 byte size</p>
 </li>
 </ul>
 </dd>

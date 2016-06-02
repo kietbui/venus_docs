@@ -28,4 +28,11 @@ How to add to VENUS app
 
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	There is no configuration in this device.
+	#. Adjust color temperature
+		
+		This setting adjusts the color temperature.
+			+ Available: 1 ~ 100
+			+ Default: 50
+			+ Parameter 1, 1 byte size
+			
+

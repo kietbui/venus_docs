@@ -4,18 +4,24 @@ GE Lighting Control Outdoor
 	.. image:: ../../images/switch_dimmer/ge_lighting_control_outdoor.jpg
 	.. :align: left
 
+Brief information
+~~~~~~~~~~~~~~~~~~
+	- Power 120VAC, 60Hz
+	- Signal (Frequency) 908.42 MHz
+	- Maximum load for both outlets 15 Amps, 1800W Resistive 
+	- Maximum load for the Z-Wave controlled outlet: 600W Incandescent, 1⁄2 HP Motor or 1800W Resistive
+	- Range: Up to 100 feet line of sight between the Wireless Controller and the closest Z-Wave receiver module.
+	- Operating Temperature Range: 32-104° F (0-40° C)
+	- Suitable for outdoor use in damp locations.
+	- Specifications subject to change without notice due to continuing product improvement
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
 	To add device to VENUS, below actions are required:
 	
 	- Press "Add button" (button '+') in app
-	- Reset device: 
-		
-		*Plugin device to power-supply*
-		
-		*Press z-wave button*
-		
+	- Plugin device to power-supply
+	- Press program button once	
 	- Wait for VENUS scan, detect this device and add it to VENUS
 	
 Configuration description

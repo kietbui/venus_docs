@@ -5,6 +5,15 @@ First Alert Smoke and Carbon Monoxide
 	.. :align: left
 	
 
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~
+	- Separate sensors to detect smoke and CO; the two alarm systems work independently
+	- Voice with programmable location
+	- Separate audible and visual signals to indicate alarm levels of smoke or CO
+	- Powered by two “AA” batteries 
+	- Side access drawer for easy battery replacement
+	- Power: 3V (2xAA battery)
+	- Audio alarm: 85dB at 10 feets
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -22,6 +31,31 @@ How to add to VENUS app
 	.. image:: ../../images/alarm_siren/first_alert_smoke_i.jpg
 	.. :align: left
 
+Sound and LED indication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	===============================	==========================================================	============================================
+	State							Sound														LED
+	===============================	==========================================================	============================================
+	Normal operation				Silent														Smoke LED: Flash green once a minute, CO LED: off
+	Test the alarm					3 beeps, pause, 3 beeps										Smoke LED: flash red, CO LED: off
+									4 beeps, pause, 4 beeps										Smoke LED: off, CO LED: flash red
+	Battery low						Chirp once a minute											Smoke LED: Flash once a minute, CO LED: off
+	Alarm operates not properly		3 chirps every minute										Smoke LED: 3 flash once a minute, CO LED: off
+	Alarm reaches End fo life		5 chirps every minute										Smoke LED: 5 flash once a minute, CO LED: off
+	Alarm levels of are CO detected	4 beeps, pause, 4 beeps, after 4 min the pause is 1 min		Smoke LED: off, CO LED: flash red
+	Smoke is detected				3 beeps, pause, 3 beeps										Smoke LED: flash red, CO LED: off
+	===============================	==========================================================	============================================
+
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	T.B.D
+	#. Double alarm message
+	
+		Enable this feature will cause of sending 2 alarm messages.
+			+ Available: 
+				- Enable double alarm messages
+				- Disable double alarm messages
+			+ Default: Disable
+			+ Parameter 1, 1 byte size
+			
+	
+	

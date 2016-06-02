@@ -1,9 +1,18 @@
-Leviton Dimmer
----------------------------------------
+Leviton DZMX1-1LZ Decora Z-Wave Controls Universal Dimmer
+---------------------------------------------------------------------
 
 	.. image:: ../../images/switch_dimmer/leviton_dimmer.jpg
 	.. :align: left
 
+Brief information
+~~~~~~~~~~~~~~~~~~~
+	- Soft fade ON/OFF
+	- Scene capable
+	- ON/OFF LED and Brightness level LED
+	- Two way communication
+	- RF reliability
+	- Ease of installation – No new wiring
+	- Compatible with other Z-Wave enabled devices
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -16,7 +25,14 @@ How to add to VENUS app
 	.. image:: ../../images/switch_dimmer/leviton_dimmer_a.jpg
 	.. :align: left
 	
+Factory reset
+~~~~~~~~~~~~~~~~~~
+	On the dimmer, gently pressing the top of the push pad until the bottom lifts completely out of the frame and wait 5 seconds. Press the push pad back into the frame and hold push pad until the locator LED turns Amber and then turns Red. The dimmer is now reset.
+	
+	.. image:: ../../images/switch_dimmer/leviton_dzmx1_universal_dimmer_r.png
+	.. :align: left
+	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-	TBD
+	There is no configuration in this device.
 	

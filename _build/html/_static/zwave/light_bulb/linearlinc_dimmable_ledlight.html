@@ -141,9 +141,14 @@
 <h2>Brief information<a class="headerlink" href="#brief-information" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li>The LB60Z-1 Smart LED Light Bulb is simple to set up and provides longer life and more energy effi ciency than incandescent or fl orescent light bulbs.</li>
-<li>The bulb is instant on, without the warm-up delay common in CFL bulbs.</li>
-<li>LinearLinc Z-Wave products are easy to install, and allow dealers to create an integrated wireless network with nearly limitless expansion and interoperability with security, energy management, home entertainment, appliances, and more</li>
+<li>Power supply 120 VAC, 60 Hz</li>
+<li>Brightness up to 750 lumens (Equivalent to 60 Watt incandescent light bulb)</li>
+<li>Power consumption: 9 Watts</li>
+<li>Color temperature: 2700K</li>
+<li>Bulb lifetime: 25,000 hour (equivalent 22.8 years based on 3 hours/day)</li>
+<li>Radio frequency 908.4 MHz / 916 MHz</li>
+<li>Up to 130 feet line of sight between the Z-Wave Controller and/or the closest Z-Wave Repeater</li>
+<li>Normal working at 77°F (25°C)</li>
 </ul>
 </div></blockquote>
 </div>
@@ -166,7 +171,7 @@
 </li>
 <li><dl class="first docutils">
 <dt>Reset device: turn the power to the bulb ON then OFF four times <strong>within four seconds</strong>.</dt>
-<dd><p class="first last">The Smart LED Light Bulb will fl ash twice when the reset occurs.</p>
+<dd><p class="first last">The Smart LED Light Bulb will flash twice when the reset occurs.</p>
 </dd>
 </dl>
 </li>
@@ -178,11 +183,31 @@
 <div class="section" id="configuration-description">
 <h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p><strong>1. Dim level memory</strong></p>
+<div><ol class="arabic">
+<li><p class="first">Dim level memory</p>
 <blockquote>
-<div><p>0: Bulb will be full brightness when turned on (default)</p>
-<p>1: Bulb will turn on to the last dim level setting</p>
+<div><dl class="docutils">
+<dt>This setting determines the brightness when turned on.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Full brightness when turned on</li>
+<li>Last dim level setting when turned on</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Full brightness when turned on</p>
+</li>
+<li><p class="first">Parameter 1, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
 </div></blockquote>
+</li>
+</ol>
 </div></blockquote>
 </div>
 </div>

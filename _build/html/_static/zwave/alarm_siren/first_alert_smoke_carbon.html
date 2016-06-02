@@ -83,7 +83,9 @@
                 <!-- Local TOC -->
                 <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">First Alert Smoke and Carbon Monoxide</a><ul>
+<li><a class="reference internal" href="#brief-information">Brief information</a></li>
 <li><a class="reference internal" href="#how-to-add-to-venus-app">How to add to VENUS app</a></li>
+<li><a class="reference internal" href="#sound-and-led-indication">Sound and LED indication</a></li>
 <li><a class="reference internal" href="#configuration-description">Configuration description</a></li>
 </ul>
 </li>
@@ -136,6 +138,20 @@
 <blockquote>
 <div><img alt="../../../_images/first_alert_smoke.jpg" src="../../../_images/first_alert_smoke.jpg" />
 </div></blockquote>
+<div class="section" id="brief-information">
+<h2>Brief information<a class="headerlink" href="#brief-information" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Separate sensors to detect smoke and CO; the two alarm systems work independently</li>
+<li>Voice with programmable location</li>
+<li>Separate audible and visual signals to indicate alarm levels of smoke or CO</li>
+<li>Powered by two “AA” batteries</li>
+<li>Side access drawer for easy battery replacement</li>
+<li>Power: 3V (2xAA battery)</li>
+<li>Audio alarm: 85dB at 10 feets</li>
+</ul>
+</div></blockquote>
+</div>
 <div class="section" id="how-to-add-to-venus-app">
 <h2>How to add to VENUS app<a class="headerlink" href="#how-to-add-to-venus-app" title="Permalink to this headline">¶</a></h2>
 <blockquote>
@@ -155,10 +171,91 @@
 <img alt="../../../_images/first_alert_smoke_i.jpg" src="../../../_images/first_alert_smoke_i.jpg" />
 </div></blockquote>
 </div>
+<div class="section" id="sound-and-led-indication">
+<h2>Sound and LED indication<a class="headerlink" href="#sound-and-led-indication" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="29%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">State</th>
+<th class="head">Sound</th>
+<th class="head">LED</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Normal operation</td>
+<td>Silent</td>
+<td>Smoke LED: Flash green once a minute, CO LED: off</td>
+</tr>
+<tr class="row-odd"><td>Test the alarm</td>
+<td><dl class="first last docutils">
+<dt>3 beeps, pause, 3 beeps</dt>
+<dd>4 beeps, pause, 4 beeps</dd>
+</dl>
+</td>
+<td><dl class="first last docutils">
+<dt>Smoke LED: flash red, CO LED: off</dt>
+<dd>Smoke LED: off, CO LED: flash red</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>Battery low</td>
+<td>Chirp once a minute</td>
+<td>Smoke LED: Flash once a minute, CO LED: off</td>
+</tr>
+<tr class="row-odd"><td>Alarm operates not properly</td>
+<td>3 chirps every minute</td>
+<td>Smoke LED: 3 flash once a minute, CO LED: off</td>
+</tr>
+<tr class="row-even"><td>Alarm reaches End fo life</td>
+<td>5 chirps every minute</td>
+<td>Smoke LED: 5 flash once a minute, CO LED: off</td>
+</tr>
+<tr class="row-odd"><td>Alarm levels of are CO detected</td>
+<td>4 beeps, pause, 4 beeps, after 4 min the pause is 1 min</td>
+<td>Smoke LED: off, CO LED: flash red</td>
+</tr>
+<tr class="row-even"><td>Smoke is detected</td>
+<td>3 beeps, pause, 3 beeps</td>
+<td>Smoke LED: flash red, CO LED: off</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
 <div class="section" id="configuration-description">
 <h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>T.B.D</div></blockquote>
+<div><ol class="arabic">
+<li><p class="first">Double alarm message</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Enable this feature will cause of sending 2 alarm messages.</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Enable double alarm messages</li>
+<li>Disable double alarm messages</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Default: Disable</p>
+</li>
+<li><p class="first">Parameter 1, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
 </div>
 </div>
 

@@ -83,7 +83,9 @@
                 <!-- Local TOC -->
                 <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">GE Dimmer Switch</a><ul>
+<li><a class="reference internal" href="#brief-information">Brief information</a></li>
 <li><a class="reference internal" href="#how-to-add-to-venus-app">How to add to VENUS app</a></li>
+<li><a class="reference internal" href="#led-indicator">LED Indicator</a></li>
 <li><a class="reference internal" href="#configuration-description">Configuration description</a></li>
 </ul>
 </li>
@@ -136,24 +138,35 @@
 <blockquote>
 <div><img alt="../../../_images/ge_dimmer_switch.jpg" src="../../../_images/ge_dimmer_switch.jpg" />
 </div></blockquote>
+<div class="section" id="brief-information">
+<h2>Brief information<a class="headerlink" href="#brief-information" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Power: 120 VAC, 60 Hz.</li>
+<li>Signal (Frequency): 908.42 MHz.</li>
+<li>Maximum Loads: 600W, incandescent</li>
+<li>Range: Up to 100 feet line of sight between the Wireless Controller and the closest Z-Wave receiver module.</li>
+<li>Operating Temperature Range: 32-104° F (0-40° C)</li>
+<li>For indoor use only.</li>
+</ul>
+</div></blockquote>
+</div>
 <div class="section" id="how-to-add-to-venus-app">
 <h2>How to add to VENUS app<a class="headerlink" href="#how-to-add-to-venus-app" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>To add device to VENUS, below actions are required:</p>
-<ul>
-<li><p class="first">Press &#8220;Add button&#8221; (button &#8216;+&#8217;) in app</p>
-</li>
-<li><p class="first">Reset device:</p>
-<blockquote>
-<div><p><em>Power-on, led will blink slowly</em></p>
-<p><em>Press PUSH panel once</em></p>
-<p><em>&#8211;&gt; If device is added successfully, led will stop blinking</em></p>
-</div></blockquote>
-</li>
-<li><p class="first">Wait for VENUS scan, detect this device and add it to VENUS</p>
-</li>
+<ul class="simple">
+<li>Press &#8220;Add button&#8221; (button &#8216;+&#8217;) in app</li>
+<li>Tap the top/bottom push pad to reset</li>
+<li>Tap the top/bottom push pad to add</li>
+<li>Wait for VENUS scan, detect this device and add it to VENUS</li>
 </ul>
 </div></blockquote>
+</div>
+<div class="section" id="led-indicator">
+<h2>LED Indicator<a class="headerlink" href="#led-indicator" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>The LED will be lit when the connected lighting is OFF.</div></blockquote>
 </div>
 <div class="section" id="configuration-description">
 <h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
@@ -206,30 +219,28 @@
 </dl>
 </div></blockquote>
 </li>
-<li><p class="first">Invert switch</p>
+<li><p class="first">Ignore start level in dim command</p>
 <blockquote>
 <div><dl class="docutils">
-<dt>This setting determines which switch tab is ON/OFF switch</dt>
+<dt>This setting allows user ignores start dim level embedded in dim command or not.</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
 <dt>Available:</dt>
 <dd><ul class="first last simple">
-<li>Normal switch</li>
-<li>Invert switch</li>
+<li>Ignore start level in dim command</li>
+<li>Get start level in dim command</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first">Default: Normal switch</p>
+<li><p class="first">Default: Ignore start level in dim command</p>
 </li>
-<li><p class="first">Parameter 4, 1 byte size</p>
+<li><p class="first">Parameter 5, 1 byte size</p>
 </li>
 </ul>
 </dd>
 </dl>
 </div></blockquote>
-</li>
-<li><p class="first">Dim rate adjustments</p>
 </li>
 </ol>
 </div></blockquote>

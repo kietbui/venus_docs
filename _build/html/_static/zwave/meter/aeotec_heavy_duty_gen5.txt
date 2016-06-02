@@ -29,59 +29,67 @@ How to add to VENUS app
 		
 	.. image:: ../../images/meter/aeotec_heavy_duty_gen5_i.jpg
 	.. :align: left
-
-Configuration description
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-	#. Enable overload protection
-		When enable this function, load will be closed when the current more than 39.5A and the time more than 5 seconds. 
-		
-		================= ==========================================================================================================================
-		 Available         0: disable
-		 
-		                   1: enable
-		 Default           0
-		================= ==========================================================================================================================
 	
-	#. Enable notification when load changes
-		Enable to send notifications to associated devices when the state of Heavy Duty Smart Switch Gen5’s load changed.
-		
-		================= ==========================================================================================================================
-		 Available         0: disable
-		 
-		                   1: hail notification
-		                   
-		                   2: basic notification
-		 Default           0
-		================= ==========================================================================================================================
-	
-	#. Enable report for threshold change (in Watt)	
-		Auto report when usage Watt in device over threshold.
-		
-		================= ==========================================================================================================================
-		 Available         0 ~ 60000 (in Watt)
-		 Default           50
-		================= ==========================================================================================================================
-	
-	#. Enable report for threshold change (in percentage)	
-		Auto report when usage percentage in device over threshold.
-		
-		================= ==========================================================================================================================
-		 Available         0 ~ 100 (in percentage)
-		 Default           10
-		================= ==========================================================================================================================
-	
-	#. Enable auto report when load changes
-		
-		================= ==========================================================================================================================
-		 Available         0: disable
-		 
-		                   1: enable
-		 Default           1
-		================= ==========================================================================================================================
-
 Factory reset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	- Power-up device
 	- Press and hold z-wave button for 20 seconds
 	*Note: when hold more than 1 second, LED blinks faster and faster. When holding more than 20 seconds, LED is on in 2 seconds.*
 	
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#. Enable overload protection
+		
+		When enable this function, load will be closed when the current more than 39.5A and the time more than 5 seconds. 
+			+ Available:
+				- Enable overload protection
+				- Disable overload protection
+			+ Default: Disable
+			+ Parameter 3, 1 byte size
+		
+	#. Enable notification when load changes
+		
+		Enable to send notifications to associated devices when the state of Heavy Duty Smart Switch Gen5’s load changed.
+			+ Available:
+				- Disable notification
+				- Hail notification
+				- Basic notification
+			+ Default: Disable
+			+ Parameter 80, 1 byte size
+	
+	#. Enable report for threshold change (in Watt)	
+		
+		Auto report when usage Watt in device over threshold.
+			+ Available: 
+				- Disable auto report
+				- 1 ~ 60000 watts
+			+ Default: 50
+			+ Parameter 91, 2 bytes size
+		
+	#. Enable report for threshold change (in percentage)	
+		
+		Auto report when usage percentage in device over threshold.
+			+ Available: 
+				- Disable auto report
+				- 1 ~ 100 percentage
+			+ Default: 10
+			+ Parameter 92, 1 byte size
+
+	#. Enable auto report when load changes
+			
+			+ Available:
+				- Enable auto report
+				- Disable auto report
+			+ Default: Enable
+			+ Parameter 90, 1 byte size
+	
+	#. Enable lock configuration
+	
+		This setting allows device to be configured or not.
+			+ Available:
+				- Enable configuration setting
+				- Disable configuration setting
+			+ Default: Enable
+			+ Parameter 252, 1 byte size
+

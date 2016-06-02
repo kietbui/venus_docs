@@ -6,12 +6,16 @@ FIBARO flood sensor
 	
 Brief information
 ~~~~~~~~~~~~~~~~~~~~~~~~
-	- The Ultimate Z-wave water leak sensor/detector, with temperature and tilt sensor
-	- Get alerted immediately on your smart phone, tablet, our email when there is a leak. Trigger certain lights, activate specific scenes or even sirens to activate if there is a threat
-	- Three 24K plated gold telescoping feat always make sure its making contact even on uneven surfaces and never corodes. Built for longevity.
-	- Built in temperature sensor alerts through your smart hub's app and visually/ audibly at sensor if there is a suddon rise or fall in temperature
-	- Z-Wave Certifed Sensor: Certification ID ZC08-14070006 / Frequency Region: U.S./Canada/Mexico, Z-Wave Library Version: 4.55.00
-
+	- Compatible with any Z-Wave or Z-Wave+ Controller
+	- Supports protected mode (Z-Wave network security mode) with AES-128 encryption
+	- May be connected to any alarm system (potential free output terminal)
+	- Extremely easy installation - simply put on a surface prone to flooding
+	- May be installed anywhere - flood sensor’s contacts extended with a wire
+	- Battery or VDC powered. When connected to an external, VDC power source, the battery serves as an emergency power source
+	- Theft protection - tilt is reported to the Z-Wave network or alarm system’s main controller
+	- Two operating modes - flood/temperature sensor or just a temperature sensor.
+	- Alarm is signalled by sound, visual indicator (LED diode) and Z-Wave
+	
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
 	**1. Activation**
@@ -47,89 +51,25 @@ How to add/remove associated device(s) to
 	- Wake-up this sensor: 3 times quick press TMP button (Z-Wave button)
 	- If successful, pop-up notification displays in VENUS app
 
+Button action and events
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- 1 press: select desired MENU option (in case MENU mode is active)
+	- 3 presses: add/remove or wake up
+	- Press and holding: enter the MENU mode (confirmed by visual indicator)
+	
+MENU mode & visual indicator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Flood alarm is signalled: white and blue light
+	- In battery mode, periodically show temperature readouts via LED color
+	- In constant powering mode, continuously show temperature readouts via LED color
+	- Chosen MENU option is signalled with an illumination color
+	
+	*MENU mode LED color*
+	- White: enter the MENU confirmation
+	- GREEN: cancel alarm for associated devices
+	- VIOLET: z-wave network's range test
+	- YELLOW: sensor reset
 
-Configuration description
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-	#. Alarm cancellation delay
-	
-		Determines time period, in seconds, by which a Flood Sensor will re-tain the flood state after the flooding itself, has ceased.
-		
-		=========================== ================================================
-		 Available setting           0 - 3600 (in seconds)
-		 Default setting             0
-		=========================== ================================================
-	
-	#. Acoustic and visual signals On / Off in case of flooding
-	
-		Select alarm type with below values:
-		
-		=========================== ================================================================================================
-		 Available setting           0 - no alarm active
-		 
-		                             1 - visual alarm active
-		                             
-		                             2 - acoustic alarm active
-		                             
-		                             3 - both acoustic and visual alarms active
-		 Default setting             3
-		=========================== ================================================================================================
-	
-	#. Basic set level for associated devices
-	
-		=========================== ================================================================================================
-		 Available setting           1 - 99: Dim level (for multi-level switch devices)
-		 
-		                             255: ON trigger (for binary switch devices)
-		 Default setting             255
-		=========================== ================================================================================================
-	
-	#. Alarm cancellation
-	
-		This setting allows associated devices receive OFF trigger of alarm cancellation.
-		
-		=========================== ================================================================================================
-		 Available setting           0 - Inactive alarm cancellation
-		 
-		                             1 - Active alarm cancellation
-		 Default setting             1
-		=========================== ================================================================================================
-	
-	#. Temperature measurement interval
-	
-		Set interval time for device to auto measure temperature.
-		
-		=========================== ================================================================================================
-		 Available setting           1 - 65535 (in seconds)
-		 Default setting             300 (5min)
-		=========================== ================================================================================================
-	
-	#. Low temperature threshold
-	
-		=========================== ================================================================================================
-		 Available setting           -10000 - 10000 (each 0.01 celcius)
-		 Default setting             15000 (15 celcius)
-		=========================== ================================================================================================
-		
-	#. High temperature threshold
-	
-		=========================== ================================================================================================
-		 Available setting           -10000 - 10000 (each 0.01 celcius)
-		 Default setting             35000 (35 celcius)
-		=========================== ================================================================================================
-	
-	#. Visual and audible alarms duration
-	
-		By default, when water/flood detecting, device will trigger alarm continuously until no water/flood detected.
-		
-		User can adjust alarm time to save battery by below setting:
-		
-		=========================== ================================================================================================
-		 Available setting           0 - alarms active indefinitely
-		 
-		                             1-65535 - time in seconds
-		 Default setting             0
-		=========================== ================================================================================================
-	
 Factory reset
 ~~~~~~~~~~~~~~~~~~~~~~
 	**Resetting the Flood Sensor: Reset procedure deletes EEPROM’s memory, including all information on the Z-Wave network and the main controller.**
@@ -140,3 +80,144 @@ Factory reset
 	#. Release the TMP button
 	#. Click the TMP button, once
 	#. After few seconds the device will be restarted, which is signalled with the red visual indicator colour and acoustic signal
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#. Alarm cancellation delay
+	
+		Determines time period, in seconds, by which a Flood Sensor will re-tain the flood state after the flooding itself, has ceased.
+			+ Available: 0 - 3600 (in seconds)
+			+ Default: 0
+			+ Parameter 1, 2 bytes size
+	
+	#. Acoustic and visual signals On / Off in case of flooding
+	
+		Select alarm type with below values:
+			+ Available:
+				- no alarm active
+				- visual alarm active
+				- acoustic alarm active
+				- both acoustic and visual alarms active
+			+ Default: Both acoustic and visual
+			+ Parameter 2, 1 byte size
+	
+	#. Trigger level for associated devices
+	
+		This setting determines dim value that device trigger to associated devices (for multi-level devices).
+			+ Available: 
+				- Turn ON with dim level, range from 1 ~ 99, ON for binary state devices
+				- Turn ON with last memorized dim level, ON for binary state devices
+			+ Default: Turn ON with last memorized dim level
+			+ Parameter 7, 2 bytes size
+			
+	#. Alarm cancellation
+	
+		This setting allows associated devices receive OFF trigger of alarm cancellation.
+			+ Available:
+				- Inactive alarm cancellation
+				- Active alarm cancellation
+			+ Default: Active alarm cancellation
+			+ Parameter 9, 1 byte size
+
+	#. Temperature measurement interval
+	
+		Set interval time for device to auto measure temperature.
+			+ Available: 1 - 65535 (in seconds)
+			+ Default: 300 (5min)
+			+ Parameter 10, 4 bytes size
+	
+	#. Temperature change level
+	
+		This setting determines temperature change level between 2 measurements. If the change exceeds this setting level, device will send this measurement value to controller.
+			+ Available: 1 ~ 1000 units, unit = 0.01 oC
+			+ Default: 50 (0.5 oC)
+			+ Parameter 12, 2 bytes size
+			
+	#. Low temperature threshold
+	
+		Low temperature threshold.
+			+ Available: -10000 - 10000 (each 0.01 celcius)
+			+ Default: 15000 (15 celcius)
+			+ Parameter 50, 2 bytes size
+		
+	#. High temperature threshold
+	
+		High temperature threshold.
+			+ Available: -10000 - 10000 (each 0.01 celcius)
+			+ Default: 35000 (35 celcius)
+			+ Parameter 51, 2 bytes size
+	
+	#. Low temperature alarm indicator color
+	
+		This setting determines color in visual notification in case of low temperature detected
+			+ Available:
+				- Red, Green, Blue, Yellow, Turquoise, Orange, White
+				- No indicator
+			+ Default: Blue
+			+ Parameter 61, 4 bytes size
+	
+	#. High temperature alarm indicator color
+	
+		This setting determines color in visual notification in case of high temperature detected
+			+ Available: 
+				- Red, Green, Blue, Yellow, Turquoise, Orange, White
+				- No indicator
+			+ Default: Red
+			+ Parameter 62, 4 bytes size
+
+	#. Managing a visual indicator under standard operation
+	
+		This setting determines visual indicator's operation.
+			+ Available:
+				- Visual indicator does not indicate the temperature
+				- Visual indicator indicates the temp every measurement interval or wakeup (battery mode)
+				- Visual indicator indicates the temp continuously (constant mode)
+			+ Default: Visual indicator indicates the temp continuously (constant mode)
+			+ Parameter 63, 1 byte size
+			
+	#. Compensation for measured temperature
+		
+		This setting is amount of temperature will be added to measured temperature to report to controller
+			+ Available: -10000 ~ 10000 units, unit = 0.01 oC
+			+ Default: 0
+			+ Parameter 73, 2 bytes size
+	
+	#. Alarm frame activation
+	
+		This setting determines which kind of frame will be activated when operating with device
+			+ Available:
+				- Tamper alarm inactive
+				- Button tamper alarm active
+				- Movement tamper alarm active
+				- Button and movement tamper active
+			+ Default: Movement tamper alarm active
+			+ Parameter 74, 1 byte size
+			
+	#. Visual and audible alarms duration
+	
+		Period of time that alarm active with visual and audible when detecting flood/water
+			+ Available: 
+				- Alarm active indefinitly
+				- 1 ~ 65535 seconds
+			+ Default: Alarm active indefinitly
+			+ Parameter 75, 4 bytes size
+	
+	#. Re-alarm transmission when retaining flood alarm
+	
+		This setting determines period of time that sensor re-transmits alarm trigger when retaining flood/water alarm.
+			+ Available:
+				- Re-transmission is inactive
+				- 1 ~ 65535 seconds
+			+ Default: Re-transmission is inactive
+			+ Parameter 76, 4 bytes size
+			
+	#. Flood sensor activation
+	
+		Enable/Disable flood sensor.
+			+ Available: 
+				- Enable flood sensor
+				- Disable flood sensor
+			+ Default: Enable flood sensor
+			+ Parameter 77, 1 byte size
+

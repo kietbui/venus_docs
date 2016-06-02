@@ -193,33 +193,30 @@
 <h2>Configuration description<a class="headerlink" href="#configuration-description" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ol class="arabic">
+<li><p class="first">Trigger level to associated devices</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>This setting determines trigger level will be sent to all devices in associated list.</dt>
+<dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>Basic set level for associated device</dt>
-<dd><p class="first last">When detecting water/flood, below value will be sent to all devices in associated list.</p>
+<dt>Available:</dt>
+<dd><ul class="first last simple">
+<li>Send trigger OFF</li>
+<li>Send trigger ON with dim level 1 ~ 99, trigger ON to binary level devices</li>
+</ul>
 </dd>
 </dl>
 </li>
+<li><p class="first">Default: Trigger ON with dim level 99</p>
+</li>
+<li><p class="first">Parameter 1, 1 byte size</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
 </ol>
-<table border="1" class="docutils">
-<colgroup>
-<col width="13%" />
-<col width="87%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Value</th>
-<th class="head">Description</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>0</td>
-<td>OFF</td>
-</tr>
-<tr class="row-odd"><td>1 - 99</td>
-<td>ON (For binary switch devices)
-Dim level (For multi-level switch devices)</td>
-</tr>
-</tbody>
-</table>
 </div></blockquote>
 </div>
 </div>

@@ -31,7 +31,7 @@ Z-Wave
 	- :ref:`Button Devices <button_devices>`
 	- :ref:`NEST <nest_devices>`
 	- :ref:`Lock <lock_devices>`
-	- :ref:`Themostat <themostat_devices>`
+	- :ref:`Themostat <thermostat_devices>`
 	- :ref:`Others <other_devices>`
 
 Zigbee
