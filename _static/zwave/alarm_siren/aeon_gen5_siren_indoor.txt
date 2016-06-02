@@ -5,6 +5,15 @@ Aeon Labs Gen 5 siren for indoors
 	.. :align: left
 	
 
+Brief information
+~~~~~~~~~~~~~~~~~~~~~~
+	- Model number: ZW080
+	- Built-in Lithium Battery: 430 mAh.
+	- Alarm Power: 1.7W.
+	- Max Standby Power: 0.7W.
+	- Max Volume: 105 dB, reduced in battery powered mode.
+	- Operating Temperature: 0-45°C
+	- Operating Distance: Up to 550 feet/170 metres outdoors.
 
 How to add to VENUS app  
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,20 +30,51 @@ How to add to VENUS app
 	
 	.. image:: ../../images/alarm_siren/aeon_siren_5_b.jpg
 	.. :align: left
+	
+Functions of z-wave button
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Press once: add/remove siren to/from z-wave network
+	- Press and hold 5~8 seconds: cancel alarm status or test the sound
+	- Press and hold 20 seconds and release:  Reset siren to factory default setting
 
-Configuration description
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-	#. Associating different tones with difference events
-		- Type 1: relevant to intruder alerts
-		- Type 2: relevant to the likes of medical emergencies
-		- Type 3: relevant to the likes of medical emergencies continuosly
-		- Type 4: relevant to the likes of water leaks
-		- Type 5: relevant to the likes of and door chimes
-	#. Volume level
-		- Low
-		- Medium
-		- High
-		
 Factory reset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 	Press and hold the Action Button for 20 seconds and then release it. Your Siren will now be reset to its original settings, and the speaker system will sound for 3 seconds as a confirmation.
+
+
+Configuration description
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#. Alarm sound and volume
+		
+		This setting adjusts type of alarm sound and volume. High byte is used for alarm type and low byte is used for volume.
+			+ Available: 
+				- Alarm sound type 1 - relevant to intruder alerts
+				- Alarm sound type 2 - relevant to the likes of medical emergencies
+				- Alarm sound type 3 - relevant to the likes of medical emergencies continuosly
+				- Alarm sound type 4 - relevant to the likes of water leaks
+				- Alarm sound type 5 - relevant to the likes of and door chimes
+
+				- Do not change current volume
+				- Low volume with 88 dB
+				- Medium volume with 100 dB
+				- High volume with 105 dB
+			+ Default: alram sound type 1 and high volume
+			+ Parameter 37, 2 bytes size
+			
+	#. Enable to send notification to associated devices 
+	
+		This setting enables ability to send notification to associated devices when siren state changes.
+			+ Available: 
+				- Send nothing
+				- Send hail CC
+				- Send basic CC report
+		
+	#. Enable lock configuration
+	
+		Enable/Disable lock configuration setting for this device.
+			+ Available:
+				- Enable lock configuration
+				- Disable lock configuration
+			+ Default: Disable
+			+ Parameter 255, 1 byte size
+		

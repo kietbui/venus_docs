@@ -18,15 +18,20 @@ How to add to VENUS app
 	**1. Activation**
 		- Press "Add button" (button '+') in app
 		- Plugin device to power supply socket
-		- Triple press **z-wave button**
+		- Press the knob on the module
 		- Wait for VENUS scan & detect this device and inform in app
 	
 	**2. Reset then re-add**
 		- Press "Add button" (button '+') in app
 		- Plugin device to power supply socket
-		- Triple press **z-wave button** (to reset)
-		- Triple press **z-wave button** one more time (to add)
+		- Press the knob on the module (to reset)
+		- Press the knob on the module one more time (to add)
 		- Wait for VENUS scan & detect this device and inform in app
+	
+	.. image:: ../../images/switch_dimmer/everspring_screwin_lamp_module_d.png
+	.. :align: left
+	
+	
 	
 Configuration description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
