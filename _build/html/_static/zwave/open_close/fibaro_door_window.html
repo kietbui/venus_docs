@@ -274,7 +274,7 @@
 </dl>
 </div></blockquote>
 </li>
-<li><p class="first">Association control frame</p>
+<li><p class="first">Trigger signal level to associated devices</p>
 <blockquote>
 <div><dl class="docutils">
 <dt>Value of the parameter specifying the forced level of dimming/ope-ning roller blinds when “switch on”/”open” commands are sent to devices from association group no.1.</dt>
@@ -282,30 +282,7 @@
 <li><dl class="first docutils">
 <dt>Available:</dt>
 <dd><ul class="first last simple">
-<li>0 ~ 99: Dim value</li>
-<li>Turn on associated device with last memorized dim value</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p class="first">Default: Turn on associated device with last memorized dim value</p>
-</li>
-<li><p class="first">Parameter 7, 1 byte size</p>
-</li>
-</ul>
-</dd>
-</dl>
-</div></blockquote>
-</li>
-<li><p class="first">Association control frame</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>Deactivating transmission of the alarm cancelling frame or the control frame deactivating the device (Basic). It allows for disabling the function of deactivating the device and cancelling alarms for devices associated with IN input.</dt>
-<dd><ul class="first last">
-<li><dl class="first docutils">
-<dt>Available:</dt>
-<dd><ul class="first last simple">
-<li>0 ~ 99: Dim value</li>
+<li>1 ~ 99: Dim value</li>
 <li>Turn on associated device with last memorized dim value</li>
 </ul>
 </dd>
@@ -346,7 +323,7 @@
 <li><p class="first">Temperature change report</p>
 <blockquote>
 <div><dl class="docutils">
-<dt>Deactivating transmission of the alarm cancelling frame or the control frame deactivating the device (Basic). It allows for disabling the function of deactivating the device and cancelling alarms for devices associated with IN input.</dt>
+<dt>The difference in temperature between 2 measured times exceeds this setting value will be reported to controller. Otherwise, ignore this change.</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
 <dt>Available: 0 ~ 255 units</dt>
@@ -368,12 +345,8 @@
 </li>
 <li><p class="first">Broadcast alarm control frame</p>
 <blockquote>
-<div><p>Sending an alarm or control frame (for IN input, depending on parameter no.5 value), and TMP button alarm frame. The frame is sent in “broadcast” mode, i.e. to all devices within range - information sent in this mode is not repeated by the mesh network</p>
-<ol class="arabic simple">
-<li>Broadcast alarm control frame</li>
-</ol>
-<dl class="docutils">
-<dt>Sending an alarm or control frame (for IN input, depending on parameter no.5 value), and TMP button alarm frame. The frame is sent in “broadcast” mode, i.e. to all devices within range - information sent in this mode is not repeated by the mesh network</dt>
+<div><dl class="docutils">
+<dt>Sending an alarm or control frame (for IN input, depending on parameter no.5 value), and TMP button alarm frame. The frame is sent in “broadcast” mode, i.e. to all devices within range - information sent in this mode is not repeated by the mesh network.</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
 <dt>Available:</dt>
